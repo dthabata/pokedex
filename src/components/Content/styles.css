@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem 2rem;
+    background-color: #fff;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    justify-content: center;
+}
+
+.cards div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    row-gap: 5px;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 5px 5px 20px rgba(211, 211, 211, 0.5);
+}
+
+img {
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    justify-self: center;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    background-color: #DA4167;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    border-radius: 0.7rem;
+    justify-self: start;
+}
+
+.ant-btn-primary {
+    background-color: #DA4167;
+}
