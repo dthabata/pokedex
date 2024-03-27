@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import { Input, Space, Layout, Button } from 'antd';
-import PokemonDetails from '../Modal';
-import poke1 from '../../assets/pikachu.png';
+// import PokemonDetails from '../Modal';
+import typeGrass from '../../assets/grass.png';
+import typePoison from '../../assets/poison.png';
+import poke1 from '../../assets/bulbasaur.png';
 import './styles.css';
 
 const { Search } = Input;
 const { Content } = Layout;
 
 const onSearch = (value, _e, info) => console.log(info?.source, value);
-
-const contentStyle = {
-    backgroundColor: '#fff',
-    textAlign: 'center',
-    lineHeight: '100px',
-    color: '#fff',
-};
 
 const AppContent = () => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -29,7 +24,7 @@ const AppContent = () => {
 
     return (
         <main>
-            <Content style={contentStyle}>
+            <Content className="content">
                 <Space direction="vertical">
                     <Search
                         placeholder="Procure um Pokémon!"
@@ -41,26 +36,42 @@ const AppContent = () => {
             </Content>
             <section className="cards">
                     <div className="card-info">
-                        <h3>Nome do Pokémon</h3>
-                        <p>Grass | Poison</p>
+                        <span>#002</span>
+                        <h3>Bulbasaur</h3>
+                        <div className="element">
+                            <img src={typeGrass} alt="" />
+                            <img src={typePoison} alt="" />
+                        </div>
                         <img src={poke1} alt="" />
                     </div>
 
                     <div className="card-info">
-                        <h3>Nome do Pokémon</h3>
-                        <p>Grass | Poison</p>
+                        <span>#002</span>
+                        <h3>Bulbasaur</h3>
+                        <div className="element">
+                            <img src={typeGrass} alt="" />
+                            <img src={typePoison} alt="" />
+                        </div>
                         <img src={poke1} alt="" />
                     </div>
 
                     <div className="card-info">
-                        <h3>Nome do Pokémon</h3>
-                        <p>Grass | Poison</p>
+                        <span>#002</span>
+                        <h3>Bulbasaur</h3>
+                        <div className="element">
+                            <img src={typeGrass} alt="" />
+                            <img src={typePoison} alt="" />
+                        </div>
                         <img src={poke1} alt="" />
                     </div>
 
                     <div className="card-info">
-                        <h3>Nome do Pokémon</h3>
-                        <p>Grass | Poison</p>
+                        <span>#002</span>
+                        <h3>Bulbasaur</h3>
+                        <div className="element">
+                            <img src={typeGrass} alt="" />
+                            <img src={typePoison} alt="" />
+                        </div>
                         <img src={poke1} alt="" />
                     </div> 
             </section>

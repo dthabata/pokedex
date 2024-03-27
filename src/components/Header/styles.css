@@ -1,7 +1,26 @@
-.logo {
-    text-align: center;
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
-    width: 200px;
-    object-fit: contain;
-    justify-self: center;
+}
+
+#root {
+    height: 100%;
+}
+
+.header {
+    text-align: center;
+    height: 200px;
+    line-height: 64px;
+    background-color: #fff;
+}
+
+h2 {
+    font-weight: 700;
+    color: #17171B;
+    font-size: 32px;
+}
+
+p {
+    color: #747476;
 }

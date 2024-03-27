@@ -1,21 +1,14 @@
 import React from "react";
 import { Layout } from 'antd';
-import logo from '../../assets/logo.png';
 import './styles.css';
 
 const { Header } = Layout;
 
-const headerStyle = {
-    textAlign: 'center',
-    height: 200,
-    lineHeight: '64px',
-    backgroundColor: '#fff',
-};
-
 const AppHeader = () => {
     return (
-        <Header style={headerStyle}>
-            <img className="logo" src={logo} alt="Pokédex Logo" />
+        <Header className="header">
+            <h2>Pokédex</h2>
+            <p>Procure o Pokémon pelo nome ou usando o número Pokédex Nacional.</p>
         </Header>
     );
 }

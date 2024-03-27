@@ -8,9 +8,16 @@ html, body {
     height: 100%;
 }
 
+.content {
+    background-color: '#fff';
+    text-align: center;
+    line-height: 100px;
+    color: '#fff';
+}
+
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem 2rem;
     background-color: #fff;
     padding-top: 1rem;
@@ -26,26 +33,40 @@ html, body {
     row-gap: 5px;
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 5px 5px 40px rgba(211, 211, 211, 0.5);
     cursor: pointer;
+    background-color: #8bbe8a;
+    color: #fff;
 }
 
-.cards div:hover {
+.card-info {
+    box-shadow: 10px 10px 20px rgba(43, 48, 43, 0.26);
+    background-image: url('../../assets/pattern.png');
+    background-size: 5rem;
+    background-position: top 8px right 12px;
+    background-repeat: no-repeat;
+}
+
+.card-info span {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.cards :hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
 
 img {
-    height: 100%;
-    width: 220px;
-    object-fit: cover;
     justify-self: center;
 }
 
 h3 {
-    font-size: 20px;
-    margin-bottom: -10px;
+    font-size: 26px;
+    margin-bottom: 5px;
     text-align: center;
+    margin-bottom: -10px;
 }
 
 p {
@@ -54,6 +75,10 @@ p {
     text-align: center;
 }
 
-.ant-btn-primary {
-    background-color: #DA4167;
+.element {
+    display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
 }
