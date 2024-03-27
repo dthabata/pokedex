@@ -40,38 +40,29 @@ const AppContent = () => {
                 </Space>
             </Content>
             <section className="cards">
-                    <div>
+                    <div className="card-info">
                         <h3>Nome do Pokémon</h3>
+                        <p>Grass | Poison</p>
                         <img src={poke1} alt="" />
-                        <div className="element">
-                            <p>Grass</p><p>Poison</p>
-                        </div>
                     </div>
 
-                    <div>
+                    <div className="card-info">
                         <h3>Nome do Pokémon</h3>
+                        <p>Grass | Poison</p>
                         <img src={poke1} alt="" />
-                        <p>Grass</p>
-                        <p>Poison</p>
                     </div>
 
-                    <div>
+                    <div className="card-info">
                         <h3>Nome do Pokémon</h3>
+                        <p>Grass | Poison</p>
                         <img src={poke1} alt="" />
-                        <div className="element">
-                            <p>Grass</p><p>Poison</p>
-                        </div>
                     </div>
 
-                    <div>
+                    <div className="card-info">
                         <h3>Nome do Pokémon</h3>
+                        <p>Grass | Poison</p>
                         <img src={poke1} alt="" />
-                        <div className="element">
-                            <p>Grass</p><p>Poison</p>
-                        </div>
-                    </div>
-
-                    
+                    </div> 
             </section>
         </main>
     );

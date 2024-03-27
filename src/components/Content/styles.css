@@ -21,7 +21,7 @@ html, body {
 
 .cards div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content);
     row-gap: 5px;
     border-radius: 1rem;
@@ -37,7 +37,7 @@ html, body {
 
 img {
     height: 100%;
-    width: 200px;
+    width: 220px;
     object-fit: cover;
     justify-self: center;
 }
@@ -45,23 +45,13 @@ img {
 h3 {
     font-size: 20px;
     margin-bottom: -10px;
+    text-align: center;
 }
 
 p {
     font-size: 16px;
     line-height: 1.5rem;
-}
-
-.element {
-    display: flexbox;
-    flex-direction: row;
-    gap: 5px;
-    border: none;
-}
-
-.element p {
-    text-align: left;
-    border: 1px solid black;
+    text-align: center;
 }
 
 .ant-btn-primary {
