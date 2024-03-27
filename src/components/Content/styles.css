@@ -11,13 +11,13 @@ html, body {
 .content {
     background-color: '#fff';
     text-align: center;
-    line-height: 100px;
+    line-height: 80px;
     color: '#fff';
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem 2rem;
     background-color: #fff;
     padding-top: 1rem;
@@ -40,9 +40,9 @@ html, body {
 
 .card-info {
     box-shadow: 10px 10px 20px rgba(43, 48, 43, 0.26);
-    background-image: url('../../assets/pattern.png');
-    background-size: 5rem;
-    background-position: top 8px right 12px;
+    background-image: url('../../assets/pattern.png'), url('../../assets/pokeball.png');
+    background-size: 5rem, 30%;
+    background-position: top 12px right 12px, bottom 10px left 10px;
     background-repeat: no-repeat;
 }
 
@@ -80,5 +80,6 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    min-width: 20%;
     gap: 8px;
 }

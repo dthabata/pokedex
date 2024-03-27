@@ -35,45 +35,285 @@ const AppContent = () => {
                 </Space>
             </Content>
             <section className="cards">
-                    <div className="card-info">
-                        <span>#002</span>
-                        <h3>Bulbasaur</h3>
-                        <div className="element">
-                            <img src={typeGrass} alt="" />
-                            <img src={typePoison} alt="" />
-                        </div>
-                        <img src={poke1} alt="" />
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
                     </div>
+                    <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
+                </div>
 
-                    <div className="card-info">
-                        <span>#002</span>
-                        <h3>Bulbasaur</h3>
-                        <div className="element">
-                            <img src={typeGrass} alt="" />
-                            <img src={typePoison} alt="" />
-                        </div>
-                        <img src={poke1} alt="" />
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
                     </div>
+                    <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"} alt="" />
+                </div>
 
-                    <div className="card-info">
-                        <span>#002</span>
-                        <h3>Bulbasaur</h3>
-                        <div className="element">
-                            <img src={typeGrass} alt="" />
-                            <img src={typePoison} alt="" />
-                        </div>
-                        <img src={poke1} alt="" />
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
                     </div>
+                    <img src={poke1} alt="" />
+                </div>
 
-                    <div className="card-info">
-                        <span>#002</span>
-                        <h3>Bulbasaur</h3>
-                        <div className="element">
-                            <img src={typeGrass} alt="" />
-                            <img src={typePoison} alt="" />
-                        </div>
-                        <img src={poke1} alt="" />
-                    </div> 
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+                
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div>
+
+                <div className="card-info">
+                    <span>#002</span>
+                    <h3>Bulbasaur</h3>
+                    <div className="element">
+                        <img src={typeGrass} alt="" />
+                        <img src={typePoison} alt="" />
+                    </div>
+                    <img src={poke1} alt="" />
+                </div> 
             </section>
         </main>
     );
