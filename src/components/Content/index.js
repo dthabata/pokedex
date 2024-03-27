@@ -41,52 +41,41 @@ const AppContent = () => {
             </Content>
             <section className="cards">
                     <div>
-                        <img src={poke1} alt="" />
                         <h3>Nome do Pokémon</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="www.google.com">Saiba mais</a>
+                        <img src={poke1} alt="" />
+                        <div className="element">
+                            <p>Grass</p><p>Poison</p>
+                        </div>
                     </div>
 
                     <div>
-                        <img src={poke1} alt="" />
                         <h3>Nome do Pokémon</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="www.google.com">Saiba mais</a>
+                        <img src={poke1} alt="" />
+                        <p>Grass</p>
+                        <p>Poison</p>
                     </div>
 
                     <div>
-                        <img src={poke1} alt="" />
                         <h3>Nome do Pokémon</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="www.google.com">Saiba mais</a>
+                        <img src={poke1} alt="" />
+                        <div className="element">
+                            <p>Grass</p><p>Poison</p>
+                        </div>
                     </div>
 
                     <div>
-                        <img src={poke1} alt="" />
                         <h3>Nome do Pokémon</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="www.google.com">Saiba mais</a>
+                        <img src={poke1} alt="" />
+                        <div className="element">
+                            <p>Grass</p><p>Poison</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <img src={poke1} alt="" />
-                        <h3>Nome do Pokémon</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="www.google.com">Saiba mais</a>
-                    </div>
-
-                    <div>
-                        <img src={poke1} alt="" />
-                        <h3>Nome do Pokémon</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#" onClick={handleOpenModal}>
-                            Abrir Modal
-                        </a>
-                        <PokemonDetails nome="false" />
-                    </div>
+                    
             </section>
         </main>
     );
 }
 
+// <PokemonDetails nome="false" />
 export default AppContent;
