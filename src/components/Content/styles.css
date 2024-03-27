@@ -27,6 +27,12 @@ html, body {
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 5px 5px 20px rgba(211, 211, 211, 0.5);
+    cursor: pointer;
+}
+
+.cards div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 img {

@@ -6,9 +6,7 @@ import AppContent from './components/Content';
 const { Footer } = Layout;
 
 const footerStyle = {
-  textAlign: 'center',
-  color: '#fff',
-  backgroundColor: '#DA4167',
+  backgroundColor: '#fff',
   marginTop: '68px',
 };
 
@@ -24,7 +22,7 @@ const App = () => (
     <Layout style={layoutStyle}>
       <AppHeader />
       <AppContent />
-      <Footer style={footerStyle}>Footer</Footer>
+      <Footer style={footerStyle} />
     </Layout>
   </Flex>
 );
