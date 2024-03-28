@@ -8,6 +8,10 @@ html, body {
     height: 100%;
 }
 
+.ant-layout-content .content .css-dev-only-do-not-override-42nv3w {
+    background-color: #fff;
+}
+
 .content {
     background-color: '#fff';
     text-align: center;

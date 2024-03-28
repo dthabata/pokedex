@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.footer {
+  background-color: #fff;
+  margin-top: 68px;
+}
+
+.layout {
+  background-color: '#fff';
+  overflow: hidden;
+  width: calc(50% - 8px);
+  max-width: calc(100% - 0px);
+}
