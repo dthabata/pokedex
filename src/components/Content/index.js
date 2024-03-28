@@ -42,7 +42,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -52,7 +52,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -62,7 +62,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -72,7 +72,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
                 
                 <div className="card-info">
@@ -82,7 +82,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -92,7 +92,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -102,7 +102,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -112,7 +112,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -122,7 +122,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -132,7 +132,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -142,7 +142,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -152,7 +152,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -162,7 +162,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -172,7 +172,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -182,7 +182,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -192,7 +192,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -202,7 +202,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -212,7 +212,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -222,7 +222,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -232,7 +232,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -242,7 +242,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -252,7 +252,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -262,7 +262,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -272,7 +272,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -282,7 +282,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -292,7 +292,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -302,7 +302,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -312,7 +312,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img src={poke1} alt="" />
+                    <img className="pokemon" src={poke1} alt="" />
                 </div> 
             </section>
         </main>
