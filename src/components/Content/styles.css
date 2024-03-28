@@ -88,6 +88,12 @@ p {
     gap: 8px;
 }
 
-/* TODO: Bug do tamanho das imagens
-.pokemon img {   
-} */
+.pokemon {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    min-width: 100px;
+    max-height: 220px;
+    min-height: 100px;
+    object-fit: contain;
+}

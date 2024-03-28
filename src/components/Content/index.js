@@ -3,7 +3,6 @@ import { Input, Space, Layout, Button } from 'antd';
 // import PokemonDetails from '../Modal';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
-import poke1 from '../../assets/bulbasaur.png';
 import './styles.css';
 
 const { Search } = Input;
@@ -62,7 +61,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -72,7 +71,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
                 
                 <div className="card-info">
@@ -82,7 +81,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -92,7 +91,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -102,7 +101,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -112,7 +111,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -122,7 +121,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -132,7 +131,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -142,7 +141,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -152,7 +151,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -162,7 +161,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -172,7 +171,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -182,7 +181,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -192,7 +191,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -202,7 +201,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -212,7 +211,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -222,7 +221,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -232,7 +231,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -242,7 +241,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -252,7 +251,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -262,7 +261,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -272,7 +271,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -282,7 +281,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -292,7 +291,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -302,7 +301,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div>
 
                 <div className="card-info">
@@ -312,7 +311,7 @@ const AppContent = () => {
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </div>
-                    <img className="pokemon" src={poke1} alt="" />
+                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
                 </div> 
             </section>
         </main>
