@@ -8,8 +8,8 @@ html, body {
     height: 100%;
 }
 
-.ant-layout-content .content .css-dev-only-do-not-override-42nv3w {
-    background-color: #fff;
+.ant-layout-content {
+    background-color: #fff !important;
 }
 
 .content {
