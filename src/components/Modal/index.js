@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 
 const PokemonDetails = ({ nome }) => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
 
     return (
         <>
