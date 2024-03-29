@@ -1,0 +1,19 @@
+.evolution-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: left;
+}
+
+h4 {
+    color: #1677ff;
+    font-size: 16px;
+    line-height: 19.09px;
+    font-weight: 700;
+    text-align: left;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 10px;
+}
