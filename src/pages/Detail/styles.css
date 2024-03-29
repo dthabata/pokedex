@@ -66,11 +66,19 @@ html, body {
     margin-top: 40px;
 }
 
+.detail-body-wrapper-sm {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 .detail-body-wrapper {
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* .detail-body {
-    
-} */
+@media screen and (min-width:1px) and (max-width:600px) {
+    .detail-body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

@@ -1,4 +1,8 @@
 import React from "react";
+// import badge1 from '../../assets/badge1.png';
+// import badge2 from '../../assets/badge2.png';
+// import badge3 from '../../assets/badge3.png';
+// import badge4 from '../../assets/badge4.png';
 import './styles.css';
 
 const AboutPokémon = () => {
@@ -9,63 +13,59 @@ const AboutPokémon = () => {
             </div>
 
             <h4>Pokédex Data</h4>
-
-            <div class="table">
-                <div className="key">Species</div>
-                <div className="value">Seed Pokémon</div>
-                <div className="key">Height</div>
-                <div className="value">0.7m (2′04″)</div>
-                <div className="key">Weight</div>
-                <div className="value">6.9kg (15.2 lbs)</div>
-                <div className="key">Abilities</div>
-                <div className="value">1. Overgrow | Chlorophyll (hidden ability)</div>
-                <div className="key">Weaknesses</div>
-                <div className="value">Images</div>
+            <div class="about-table">
+                <div className="about-table-key">Species</div>
+                <div className="about-table-value">Seed Pokémon</div>
+                <div className="about-table-key">Height</div>
+                <div className="about-table-value">0.7m (2′04″)</div>
+                <div className="about-table-key">Weight</div>
+                <div className="about-table-value">6.9kg (15.2 lbs)</div>
+                <div className="about-table-key">Abilities</div>
+                <div className="about-table-value">1. Overgrow | Chlorophyll (hidden ability)</div>
+                <div className="about-table-key">Weaknesses</div>
+                <div className="about-table-value">Images</div>
             </div>
 
             <h4>Training</h4>
-
-            <div class="table">
-                <div className="key">EV Yield</div>
-                <div className="value">1 Special Attack</div>
-                <div className="key">Catch Rate</div>
-                <div className="value">45 (5.9% with PokéBall, full HP)</div>
-                <div className="key">Base Friendship</div>
-                <div className="value">70 (normal)</div>
-                <div className="key">Base Exp</div>
-                <div className="value">64</div>
-                <div className="key">Growth Rate</div>
-                <div className="value">Medium Slow</div>
+            <div class="about-table">
+                <div className="about-table-key">EV Yield</div>
+                <div className="about-table-value">1 Special Attack</div>
+                <div className="about-table-key">Catch Rate</div>
+                <div className="about-table-value">45 (5.9% with PokéBall, full HP)</div>
+                <div className="about-table-key">Base Friendship</div>
+                <div className="about-table-value">70 (normal)</div>
+                <div className="about-table-key">Base Exp</div>
+                <div className="about-table-value">64</div>
+                <div className="about-table-key">Growth Rate</div>
+                <div className="about-table-value">Medium Slow</div>
             </div>
 
             <h4>Breeding</h4>
-
-            <div class="table">
-                <div className="key">Gender</div>
-                <div className="value">
+            <div class="about-table">
+                <div className="about-table-key">Gender</div>
+                <div className="about-table-value">
                     <div className="male-gender">♀ 87.5%,</div>
                     <div className="female-gender">♂ 12.5%</div>
                 </div>
-                <div className="key">Egg Groups</div>
-                <div className="value">Grass, Monster</div>
-                <div className="key">Egg Cycles</div>
-                <div className="value">20 (4,884 - 5,140 steps)</div>
+                <div className="about-table-key">Egg Groups</div>
+                <div className="about-table-value">Grass, Monster</div>
+                <div className="about-table-key">Egg Cycles</div>
+                <div className="about-table-value">20 (4,884 - 5,140 steps)</div>
             </div>
 
             <h4>Location</h4>
-
-            <div class="table">
-                <div className="key">001</div>
+            <div class="about-table">
+                <div className="about-table-key">001</div>
                 <div className="value">(Red/Blue/Yellow)</div>
-                <div className="key">226</div>
+                <div className="about-table-key">226</div>
                 <div className="value">(Gold/Silver/Crystal)</div>
-                <div className="key">001</div>
+                <div className="about-table-key">001</div>
                 <div className="value">(FireRed/LeafGreen)</div>
-                <div className="key">231</div>
+                <div className="about-table-key">231</div>
                 <div className="value">(HeartGold/SoulSilver)</div>
-                <div className="key">080</div>
+                <div className="about-table-key">080</div>
                 <div className="value">(X/Y - Central Kalos)</div>
-                <div className="key">001</div>
+                <div className="about-table-key">001</div>
                 <div className="value">(Let's Go Pikachu/Let's Go Eevee)</div>
             </div>
         </section>

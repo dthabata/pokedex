@@ -14,14 +14,12 @@ html, body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    align-items: left;
     gap: 8px;
 }
 
 .about-info-text {
-    justify-content: center;
-    padding-left: 20%;
-    padding-right: 20%;
+    text-align: justify;
     color: rgba(116, 116, 118, 1);
     font-size: 16px;
     line-height: 19.09px;
@@ -33,7 +31,7 @@ h4 {
     font-size: 16px;
     line-height: 19.09px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
 }
 
 .about-info p:first-child {
@@ -41,25 +39,27 @@ h4 {
     justify-content: center;
 }
 
-.table {
+.about-table {
     display: grid;
     grid-template-columns: 1fr 80%; 
     max-width: 480px;
     text-align: left;
 }
 
-.table > div {
+.about-table > div {
     margin: 2px;
     padding: 5px;
-    text-align: center;
+    text-align: left;
 }
 
-.key {
+.about-table-key {
     color: rgba(23, 23, 27, 1);
     font-weight: 700;
+    min-width: 120px;
+    border: 1px solid black;
 }
 
-.value {
+.about-table-value {
     color: rgba(116, 116, 118, 1);
 }
 
