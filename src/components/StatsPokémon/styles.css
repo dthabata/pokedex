@@ -1,0 +1,45 @@
+.stats-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: left;
+}
+
+h4 {
+    color: #1677ff;
+    font-size: 16px;
+    line-height: 19.09px;
+    font-weight: 700;
+    text-align: left;
+    justify-content: center;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.stats-info-text {
+    text-align: justify;
+    color: rgba(116, 116, 118, 1);
+    font-size: 16px;
+    line-height: 19.09px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stats-info-content {
+    text-align: justify;
+    color: rgba(116, 116, 118, 1);
+    font-size: 16px;
+    line-height: 19.09px;
+}
+
+.stats-info-skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    height: 100%;
+    width: 200px;
+    object-fit: contain;
+}

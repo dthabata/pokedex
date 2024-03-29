@@ -14,6 +14,7 @@
     font-size: 16px;
     line-height: 19.09px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h4 {
@@ -25,7 +26,6 @@ h4 {
 }
 
 .about-info p:first-child {
-    margin-bottom: -5px;
     justify-content: center;
 }
 
@@ -54,6 +54,11 @@ h4 {
 
 .about-img:not(:first-child) {
     margin-left: 10px;
+}
+
+.gender {
+    display: flex;
+    gap: 6px;
 }
 
 .male-gender {

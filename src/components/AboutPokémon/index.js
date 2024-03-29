@@ -49,8 +49,10 @@ const AboutPokémon = () => {
             <div class="about-table">
                 <div className="about-table-key">Gender</div>
                 <div className="about-table-value">
-                    <div className="male-gender">♀ 87.5%,</div>
-                    <div className="female-gender">♂ 12.5%</div>
+                    <div className="gender">
+                        <div className="male-gender">♀ 87.5%,</div>
+                        <div className="female-gender">♂ 12.5%</div>
+                    </div>
                 </div>
                 <div className="about-table-key">Egg Groups</div>
                 <div className="about-table-value">Grass, Monster</div>
@@ -61,17 +63,17 @@ const AboutPokémon = () => {
             <h4>Location</h4>
             <div class="about-table">
                 <div className="about-table-key">001</div>
-                <div className="value">(Red/Blue/Yellow)</div>
+                <div className="about-table-value">(Red/Blue/Yellow)</div>
                 <div className="about-table-key">226</div>
-                <div className="value">(Gold/Silver/Crystal)</div>
+                <div className="about-table-value">(Gold/Silver/Crystal)</div>
                 <div className="about-table-key">001</div>
-                <div className="value">(FireRed/LeafGreen)</div>
+                <div className="about-table-value">(FireRed/LeafGreen)</div>
                 <div className="about-table-key">231</div>
-                <div className="value">(HeartGold/SoulSilver)</div>
+                <div className="about-table-value">(HeartGold/SoulSilver)</div>
                 <div className="about-table-key">080</div>
-                <div className="value">(X/Y - Central Kalos)</div>
+                <div className="about-table-value">(X/Y - Central Kalos)</div>
                 <div className="about-table-key">001</div>
-                <div className="value">(Let's Go Pikachu/Let's Go Eevee)</div>
+                <div className="about-table-value">(Let's Go Pikachu/Let's Go Eevee)</div>
             </div>
         </section>
     );

@@ -26,15 +26,14 @@ const Detail = () => (
                     </div>
                 </div>
             </div>
-
         </section>
-        <section className="detail-body">
-            
+
+        <section className="detail-body">     
                 <Tabs centered="true"> 
                     <TabPane tab="About" key="1" className="detail-body-wrapper-sm"> 
                         <AboutPokémon />
                     </TabPane> 
-                    <TabPane tab="Stats" key="2" className="detail-body-wrapper"> 
+                    <TabPane tab="Stats" key="2" className="detail-body-wrapper-sm"> 
                         <StatsPokémon />
                     </TabPane> 
                     <TabPane tab="Evolution" key="3" className="detail-body-wrapper"> 
@@ -44,7 +43,6 @@ const Detail = () => (
                         Data insights
                     </TabPane> 
                 </Tabs>
-            
         </section>
     </main>
 );
