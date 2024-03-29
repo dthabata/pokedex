@@ -4,6 +4,7 @@ import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
 import AboutPokémon from '../../components/AboutPokémon';
 import StatsPokémon from '../../components/StatsPokémon';
+import EvolutionPokémon from '../../components/EvolutionPokémon';
 import './styles.css';
 
 const { TabPane } = Tabs; 
@@ -36,12 +37,12 @@ const Detail = () => (
                     <TabPane tab="Stats" key="2" className="detail-body-wrapper-sm"> 
                         <StatsPokémon />
                     </TabPane> 
-                    <TabPane tab="Evolution" key="3" className="detail-body-wrapper"> 
-                        Evolution
+                    <TabPane tab="Evolution" key="3" className="detail-body-wrapper-sm"> 
+                        <EvolutionPokémon />
                     </TabPane>
-                    <TabPane tab="Data insights" key="4" className='detail-body-wrapper'> 
+                    <TabPane tab="Data insights" key="4" className="detail-body-wrapper"> 
                         Data insights
-                    </TabPane> 
+                    </TabPane>
                 </Tabs>
         </section>
     </main>
