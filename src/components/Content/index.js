@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Input, Space, Layout, Button } from 'antd';
-// import PokemonDetails from '../Modal';
+import React from 'react';
+import { Input, Space, Layout } from 'antd';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
 import './styles.css';
@@ -11,24 +10,14 @@ const { Content } = Layout;
 const onSearch = (value, _e, info) => console.log(info?.source, value);
 
 const AppContent = () => {
-    const [modalOpen, setModalOpen] = useState(false);
-
-    const handleOpenModal = () => {
-        setModalOpen(true);
-    };
-
-    const handleCloseModal = () => {
-        setModalOpen(false);
-    };
-
     return (
         <main>
             <Content className="content">
                 <Space direction="vertical">
                     <Search
-                        placeholder="Procure um Pokémon!"
+                        placeholder="Catch a Pokémon!"
                         allowClear
-                        enterButton="Pesquisar"
+                        enterButton="Search"
                         size="large"
                         onSearch={onSearch} />
                 </Space>
@@ -318,5 +307,4 @@ const AppContent = () => {
     );
 }
 
-// <PokemonDetails nome="false" />
 export default AppContent;

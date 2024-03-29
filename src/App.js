@@ -1,18 +1,12 @@
 import React from 'react';
-import { Layout, Flex } from 'antd';
-import AppHeader from './components/Header';
-import AppContent from './components/Content';
+import RoutesApp from './routes';
 
-const { Footer } = Layout;
-
-const App = () => (
-  <Flex gap="middle" wrap="wrap">
-    <Layout className="layout">
-      <AppHeader />
-      <AppContent />
-      <Footer className="footer" />
-    </Layout>
-  </Flex>
-);
+const App = () => {
+  return (
+      <>
+        <RoutesApp />
+      </>
+  );
+}
 
 export default App;

@@ -8,7 +8,7 @@ const AppHeader = () => {
     return (
         <Header className="header">
             <h1>Pokédex</h1>
-            <p>Procure o Pokémon pelo nome ou usando o número Pokédex Nacional.</p>
+            <p>Search the Pokémon by its name!</p>
         </Header>
     );
 }

@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.flex-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    color: #fff;
+}
+
+.detail-header-wrapper {
+    background-color: #8bbe8a;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 210px;
+}
+
+.detail-header {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: -2rem;
+    padding-top: 2rem;
+    background-image: url('../../assets/pattern-2.png'), url('../../assets/pokeball-2.png');
+    background-size: 4rem, 20%;
+    background-position: top 0px right 32%, top 50% left 30%;
+    background-repeat: no-repeat;
+}
+
+.detail-header h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.detail-header span {
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: -50px;
+    color: rgba(23, 23, 27, 0.6);
+}
+
+.detail-info {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.detail-image img {
+    height: 70%;
+    width: 200px;
+    object-fit: contain;
+}
+
+.detail-text {
+    margin-top: 40px;
+}
+
+.detail-body {
+    text-align: center;
+}
