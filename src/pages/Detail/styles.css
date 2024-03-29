@@ -23,13 +23,13 @@ html, body {
 }
 
 .detail-header {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     margin-top: -2rem;
     padding-top: 2rem;
     background-image: url('../../assets/pattern-2.png'), url('../../assets/pokeball-2.png');
-    background-size: 4rem, 20%;
-    background-position: top 0px right 32%, top 50% left 30%;
+    background-size: 4rem, 15%;
+    background-position: top 0px right 32%, top 50% left 35%;
     background-repeat: no-repeat;
 }
 
@@ -66,6 +66,11 @@ html, body {
     margin-top: 40px;
 }
 
-.detail-body {
-    text-align: center;
+.detail-body-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+/* .detail-body {
+    
+} */

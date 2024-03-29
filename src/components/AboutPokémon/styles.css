@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.about-info-text {
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: rgba(116, 116, 118, 1);
+    font-size: 16px;
+    line-height: 19.09px;
+    margin-top: 10px;
+}
+
+h4 {
+    color: #1677ff;
+    font-size: 16px;
+    line-height: 19.09px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-info p:first-child {
+    margin-bottom: -5px;
+    justify-content: center;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 80%; 
+    max-width: 480px;
+    padding-left: 30%;
+}
+
+.table > div {
+    margin: 2px;
+    padding: 5px;
+}
+
+.key {
+    color: rgba(23, 23, 27, 1);
+    font-weight: 700;
+}
+
+.value {
+    color: rgba(116, 116, 118, 1);
+}
+
+.male-gender {
+    color: #1677ff;
+}
+
+.female-gender {
+    color: rgb(237, 110, 199);
+}

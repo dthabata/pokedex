@@ -2,7 +2,10 @@ import React from 'react';
 import { Tabs } from 'antd';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
+import AboutPokémon from '../../components/AboutPokémon';
 import './styles.css';
+
+const { TabPane } = Tabs; 
 
 const Detail = () => (    
     <main className="flex-detail">
@@ -25,27 +28,22 @@ const Detail = () => (
 
         </section>
         <section className="detail-body">
-            <Tabs
-                defaultActiveKey="1"
-                centered
-                items={[
-                    {
-                        label: 'About',
-                        key: '1',
-                        children: 'About',
-                    },
-                    {
-                        label: 'Stats',
-                        key: '2',
-                        children: 'Stats',
-                    },
-                    {
-                        label: 'Evolution',
-                        key: '3',
-                        children: 'Evolution',
-                    },
-                ]}
-            />
+            
+                <Tabs centered="true"> 
+                    <TabPane tab="About" key="1" className='detail-body-wrapper'> 
+                        <AboutPokémon />
+                    </TabPane> 
+                    <TabPane tab="Stats" key="2" className='detail-body-wrapper'> 
+                        Stats 
+                    </TabPane> 
+                    <TabPane tab="Evolution" key="3" className='detail-body-wrapper'> 
+                        Evolution
+                    </TabPane>
+                    <TabPane tab="Data insights" key="4" className='detail-body-wrapper'> 
+                        Data insights
+                    </TabPane> 
+                </Tabs>
+            
         </section>
     </main>
 );
