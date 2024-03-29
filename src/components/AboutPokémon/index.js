@@ -1,8 +1,8 @@
 import React from "react";
-// import badge1 from '../../assets/badge1.png';
-// import badge2 from '../../assets/badge2.png';
-// import badge3 from '../../assets/badge3.png';
-// import badge4 from '../../assets/badge4.png';
+import badge1 from '../../assets/badge-1.png';
+import badge2 from '../../assets/badge-2.png';
+import badge3 from '../../assets/badge-3.png';
+import badge4 from '../../assets/badge-4.png';
 import './styles.css';
 
 const AboutPokémon = () => {
@@ -23,7 +23,12 @@ const AboutPokémon = () => {
                 <div className="about-table-key">Abilities</div>
                 <div className="about-table-value">1. Overgrow | Chlorophyll (hidden ability)</div>
                 <div className="about-table-key">Weaknesses</div>
-                <div className="about-table-value">Images</div>
+                <div className="about-table-value">
+                    <img className="about-img" src={badge1} alt="" />
+                    <img className="about-img" src={badge2} alt="" />
+                    <img className="about-img" src={badge3} alt="" />
+                    <img className="about-img" src={badge4} alt="" />
+                </div>
             </div>
 
             <h4>Training</h4>
