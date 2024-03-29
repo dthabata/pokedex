@@ -3,6 +3,7 @@ import { Tabs } from 'antd';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
 import AboutPokémon from '../../components/AboutPokémon';
+import StatsPokémon from '../../components/StatsPokémon';
 import './styles.css';
 
 const { TabPane } = Tabs; 
@@ -34,7 +35,7 @@ const Detail = () => (
                         <AboutPokémon />
                     </TabPane> 
                     <TabPane tab="Stats" key="2" className="detail-body-wrapper"> 
-                        Stats 
+                        <StatsPokémon />
                     </TabPane> 
                     <TabPane tab="Evolution" key="3" className="detail-body-wrapper"> 
                         Evolution

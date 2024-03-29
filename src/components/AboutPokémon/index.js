@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import badge1 from '../../assets/badge-1.png';
 import badge2 from '../../assets/badge-2.png';
 import badge3 from '../../assets/badge-3.png';
