@@ -2,9 +2,9 @@ import React from 'react';
 import { ArrowRightOutlined } from '@ant-design/icons';
 import {
     StyledSection
-} from './styles.js';
+} from './styles';
 
-const EvolutionPokemon = () => {
+const EvolutionPokemon: React.FC = () => {
     return (
         <StyledSection>
             <div className="evolution-info-text">
