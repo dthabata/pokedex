@@ -40,7 +40,7 @@ export const StyledSkills = styled.div`
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-auto-rows: auto;
-    gap: 2px 10px;
+    gap: 2px 12px;
     margin-top: 15px;
     align-self: self-start;
     max-width: 50%;

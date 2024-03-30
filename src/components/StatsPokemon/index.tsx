@@ -31,121 +31,80 @@ const StatsPokemon: React.FC = () => {
             <StyledContent>
                 The effectiveness of each type on Bulbasaur.
             </StyledContent>
-            {/* <StyledSkills>
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-                <StyledImage className="stats-img" src={badge1} alt="" />
-
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-            </StyledSkills> */}
-            <StyledSkills>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-                <div className="item">
-                    <StyledImage className="stats-img" src={badge1} alt="" />
-                    <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
-                </div>
-            </StyledSkills>
+                <StyledSkills>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                    <div className="item">
+                        <StyledImage className="stats-img" src={badge1} alt="" />
+                        <StyledNumbers className="random-numbers">{Math.floor(Math.random() * 6)}</StyledNumbers>
+                    </div>
+                </StyledSkills>
         </StyledSection>
     );
 }
