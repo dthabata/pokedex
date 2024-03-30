@@ -2,14 +2,15 @@ import { Fragment } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home'
 import Details from '../pages/Details';
+import React from 'react';
 
-const RoutesApp = () => {
+const RoutesApp: React.FC = () => {
     return (
         <BrowserRouter>
             <Fragment>
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route exact path="/details/:id" element={<Details />} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/details/:id" element={<Details />} />
                 </Routes>
             </Fragment>
         </BrowserRouter>
