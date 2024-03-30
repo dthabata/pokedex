@@ -87,20 +87,29 @@ export const StyledSection = styled.section`
 
     @media screen and (max-width: 480px) {
         .evolution-grid {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr 1fr)); /* Adjust the column width as needed */
+            gap: 10px; /* Adjust the gap between grid items */
+            justify-items: center;
+            margin: 0;
+            padding-bottom: 10px;
         }
-
+    
+        .grid-item {
+            width: 100%; /* Ensure each item occupies full width of the column */
+            text-align: center;
+            margin-bottom: 0; /* Adjust vertical spacing between grid items */
+            padding: 0;
+        }
+    
         .pokemon-evolution {
-            align-items: center;
-            width: 40px;
-            height: 40px;
+            width: 30px; /* Adjust the size of the image */
+            height: 30px;
+            padding: 10px;
         }
-
+    
         .evolving-info {
-            margin-top: 0;
+            margin-top: 5px; /* Adjust top margin for the evolving info */
         }
     }
 `;

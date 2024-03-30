@@ -40,8 +40,8 @@ export const StyledSkills = styled.div`
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-auto-rows: auto;
-    gap: 2px 12px;
-    margin-top: 15px;
+    gap: 0 12px;
+    margin-top: 25px;
     align-self: self-start;
     max-width: 50%;
 
@@ -54,8 +54,8 @@ export const StyledSkills = styled.div`
 `;
 
 export const StyledImage = styled.img`
-    margin-top: 20px;
     justify-self: center;
+    margin-top: 0;
 `;
 
 export const StyledNumbers = styled.p`
