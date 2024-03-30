@@ -8,17 +8,17 @@ import {
     DetailsText,
     DetailsBodyWrapper,
     Element,
-} from './styles.js';
+} from './styles';
 import { Tabs } from 'antd';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
-import AboutPokemon from '../../components/AboutPokemon/index.tsx';
-import StatsPokemon from '../../components/StatsPokemon/index.tsx';
-import EvolutionPokemon from '../../components/EvolutionPokemon/index.tsx';
+import AboutPokemon from '../../components/AboutPokemon';
+import StatsPokemon from '../../components/StatsPokemon';
+import EvolutionPokemon from '../../components/EvolutionPokemon';
 
 const { TabPane } = Tabs;
 
-const Details = () => (
+const Details: React.FC = () => (
     <MainWrapper>
         <DetailsHeaderWrapper>
             <DetailsHeader>
@@ -39,7 +39,7 @@ const Details = () => (
         </DetailsHeaderWrapper>
 
         <DetailsBodyWrapper>
-            <Tabs centered="true">
+            <Tabs centered={true}>
                 <TabPane tab="About" key="1" className="detail-body-wrapper-sm">
                     <AboutPokemon />
                 </TabPane>
