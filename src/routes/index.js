@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from '../pages/Home'
-import Detail from '../pages/Detail';
+import Details from '../pages/Details';
 
 const RoutesApp = () => {
     return (
@@ -9,7 +9,7 @@ const RoutesApp = () => {
             <Fragment>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
-                    <Route exact path="/detail/:id" element={<Detail/>} />
+                    <Route exact path="/details/:id" element={<Details />} />
                 </Routes>
             </Fragment>
         </BrowserRouter>
