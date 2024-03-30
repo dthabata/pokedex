@@ -1,310 +1,174 @@
 import React from 'react';
-import { Input, Space, Layout } from 'antd';
+import { Space } from 'antd';
+import {
+    StyledContent,
+    StyledSearch,
+    StyledMain,
+    StyledSection,
+    StyledCard,
+    StyledSpan,
+    StyledH3,
+    StyledElement,
+    StyledPokemon
+} from './styles.js';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
-import './styles.css';
-
-const { Search } = Input;
-const { Content } = Layout;
 
 const onSearch = (value, _e, info) => console.log(info?.source, value);
 
 const AppContent = () => {
     return (
-        <main>
-            <Content className="content">
+        <StyledMain>
+            <StyledContent>
                 <Space direction="vertical">
-                    <Search
+                    <StyledSearch
                         placeholder="Catch a Pokémon!"
                         allowClear
                         enterButton="Search"
                         size="large"
-                        onSearch={onSearch} />
+                        onSearch={onSearch}
+                    />
                 </Space>
-            </Content>
-            <section className="cards">
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+            </StyledContent>
+            <StyledSection>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-                
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+                <StyledCard>
+                    <StyledSpan>#002</StyledSpan>
+                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div>
-
-                <div className="card-info">
-                    <span>#002</span>
-                    <h3>Bulbasaur</h3>
-                    <div className="element">
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </div>
-                    <img className="pokemon" src={"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg"} alt="" />
-                </div> 
-            </section>
-        </main>
+                    </StyledElement>
+                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                </StyledCard>
+            </StyledSection>
+        </StyledMain>
     );
-}
+};
 
 export default AppContent;

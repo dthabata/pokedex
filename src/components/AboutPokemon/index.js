@@ -10,7 +10,7 @@ import {
     Gender,
     MaleGender,
     FemaleGender
-} from './styles.js'; // Import styled components from styles.js
+} from './styles.js';
 import badge1 from '../../assets/badge-1.png';
 import badge2 from '../../assets/badge-2.png';
 import badge3 from '../../assets/badge-3.png';
