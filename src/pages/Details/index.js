@@ -13,7 +13,7 @@ import { Tabs } from 'antd';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
 import AboutPokemon from '../../components/AboutPokemon/index.tsx';
-import StatsPokemon from '../../components/StatsPokemon/index.js';
+import StatsPokemon from '../../components/StatsPokemon/index.tsx';
 import EvolutionPokemon from '../../components/EvolutionPokemon/index.tsx';
 
 const { TabPane } = Tabs;

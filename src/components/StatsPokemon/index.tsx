@@ -7,11 +7,11 @@ import {
     StyledSkills,
     StyledImage,
     StyledNumbers,
-} from './styles.js';
+} from './styles';
 import { Flex, Progress } from 'antd';
 import badge1 from '../../assets/badge-1.png';
 
-const StatsPokemon = () => {
+const StatsPokemon: React.FC = () => {
     return (
         <StyledSection className="stats-info">
             <StyledH4>Base Stats</StyledH4>
