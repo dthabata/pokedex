@@ -2,9 +2,9 @@ import React from 'react';
 import { Tabs } from 'antd';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
-import AboutPokémon from '../../components/AboutPokémon';
-import StatsPokémon from '../../components/StatsPokémon';
-import EvolutionPokémon from '../../components/EvolutionPokémon';
+import AboutPokemon from '../../components/AboutPokemon';
+import StatsPokemon from '../../components/StatsPokemon';
+import EvolutionPokemon from '../../components/EvolutionPokemon';
 import './styles.css';
 
 const { TabPane } = Tabs; 
@@ -32,13 +32,13 @@ const Detail = () => (
         <section className="detail-body">     
                 <Tabs centered="true"> 
                     <TabPane tab="About" key="1" className="detail-body-wrapper-sm"> 
-                        <AboutPokémon />
+                        <AboutPokemon />
                     </TabPane> 
                     <TabPane tab="Stats" key="2" className="detail-body-wrapper-sm"> 
-                        <StatsPokémon />
+                        <StatsPokemon />
                     </TabPane> 
                     <TabPane tab="Evolution" key="3" className="detail-body-wrapper-sm"> 
-                        <EvolutionPokémon />
+                        <EvolutionPokemon />
                     </TabPane>
                     <TabPane tab="Data insights" key="4" className="detail-body-wrapper"> 
                         Data insights

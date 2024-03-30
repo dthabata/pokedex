@@ -5,7 +5,7 @@ import badge3 from '../../assets/badge-3.png';
 import badge4 from '../../assets/badge-4.png';
 import './styles.css';
 
-const AboutPokémon = () => {
+const AboutPokemon = () => {
     return (
         <section className="about-info">
             <div className="about-info-text">
@@ -15,7 +15,7 @@ const AboutPokémon = () => {
             <h4>Pokédex Data</h4>
             <div class="about-table">
                 <div className="about-table-key">Species</div>
-                <div className="about-table-value">Seed Pokémon</div>
+                <div className="about-table-value">Seed pokemon</div>
                 <div className="about-table-key">Height</div>
                 <div className="about-table-value">0.7m (2′04″)</div>
                 <div className="about-table-key">Weight</div>
@@ -79,4 +79,4 @@ const AboutPokémon = () => {
     );
 }
 
-export default AboutPokémon;
+export default AboutPokemon;

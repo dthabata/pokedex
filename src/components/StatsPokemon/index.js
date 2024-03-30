@@ -4,7 +4,7 @@ import content1 from '../../assets/content-1.png';
 import content2 from '../../assets/content-2.png';
 import './styles.css';
 
-const StatsPokémon = () => {
+const StatsPokemon = () => {
     return (
         <section className="stats-info">
             <h4>Base Stats</h4>
@@ -18,7 +18,7 @@ const StatsPokémon = () => {
                 </Flex>
             </div>
             <div className="stats-info-text">
-                The ranges shown on the right are for a level 100 Pokémon. Maximum values are based on a beneficial nature, 252 EVs, 31 IVs; minimum values are based on a hindering nature, 0 EVs, 0 IVs.
+                The ranges shown on the right are for a level 100 pokemon. Maximum values are based on a beneficial nature, 252 EVs, 31 IVs; minimum values are based on a hindering nature, 0 EVs, 0 IVs.
             </div>
             <h4>Type Defenses</h4>
             <div className="stats-info-content">
@@ -32,4 +32,4 @@ const StatsPokémon = () => {
     );
 }
 
-export default StatsPokémon;
+export default StatsPokemon;
