@@ -30,7 +30,7 @@ export const Heading = styled.h4`
 export const AboutTable = styled.div`
     display: grid;
     grid-template-columns: 1fr 80%; 
-    max-width: 480px;
+    max-width: 280px;
     text-align: left;
     line-height: 42px;
 `;
