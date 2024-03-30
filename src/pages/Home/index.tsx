@@ -1,8 +1,6 @@
 import React from 'react';
 import { Layout, Flex } from 'antd';
 import AppHeader from '../../components/Header';
-// TODO: Content to TS
-// @ts-ignore
 import AppContent from '../../components/Content';
 
 const { Footer } = Layout;
