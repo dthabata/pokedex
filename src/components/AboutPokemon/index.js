@@ -1,81 +1,92 @@
 import React from 'react';
+import {
+    AboutInfoSection,
+    AboutInfoText,
+    Heading,
+    AboutTable,
+    TableKey,
+    TableValue,
+    AboutImg,
+    Gender,
+    MaleGender,
+    FemaleGender
+} from './styles.js'; // Import styled components from styles.js
 import badge1 from '../../assets/badge-1.png';
 import badge2 from '../../assets/badge-2.png';
 import badge3 from '../../assets/badge-3.png';
 import badge4 from '../../assets/badge-4.png';
-import './styles.css';
 
 const AboutPokemon = () => {
     return (
-        <section className="about-info">
-            <div className="about-info-text">
+        <AboutInfoSection>
+            <AboutInfoText>
                 Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.
-            </div>
+            </AboutInfoText>
 
-            <h4>Pokédex Data</h4>
-            <div class="about-table">
-                <div className="about-table-key">Species</div>
-                <div className="about-table-value">Seed pokemon</div>
-                <div className="about-table-key">Height</div>
-                <div className="about-table-value">0.7m (2′04″)</div>
-                <div className="about-table-key">Weight</div>
-                <div className="about-table-value">6.9kg (15.2 lbs)</div>
-                <div className="about-table-key">Abilities</div>
-                <div className="about-table-value">1. Overgrow | Chlorophyll (hidden ability)</div>
-                <div className="about-table-key">Weaknesses</div>
-                <div className="about-table-value">
-                    <img className="about-img" src={badge1} alt="" />
-                    <img className="about-img" src={badge2} alt="" />
-                    <img className="about-img" src={badge3} alt="" />
-                    <img className="about-img" src={badge4} alt="" />
-                </div>
-            </div>
+            <Heading>Pokédex Data</Heading>
+            <AboutTable>
+                <TableKey>Species</TableKey>
+                <TableValue>Seed pokemon</TableValue>
+                <TableKey>Height</TableKey>
+                <TableValue>0.7m (2′04″)</TableValue>
+                <TableKey>Weight</TableKey>
+                <TableValue>6.9kg (15.2 lbs)</TableValue>
+                <TableKey>Abilities</TableKey>
+                <TableValue>1. Overgrow | Chlorophyll (hidden ability)</TableValue>
+                <TableKey>Weaknesses</TableKey>
+                <TableValue>
+                    <AboutImg src={badge1} alt="" />
+                    <AboutImg src={badge2} alt="" />
+                    <AboutImg src={badge3} alt="" />
+                    <AboutImg src={badge4} alt="" />
+                </TableValue>
+            </AboutTable>
 
-            <h4>Training</h4>
-            <div class="about-table">
-                <div className="about-table-key">EV Yield</div>
-                <div className="about-table-value">1 Special Attack</div>
-                <div className="about-table-key">Catch Rate</div>
-                <div className="about-table-value">45 (5.9% with PokéBall, full HP)</div>
-                <div className="about-table-key">Base Friendship</div>
-                <div className="about-table-value">70 (normal)</div>
-                <div className="about-table-key">Base Exp</div>
-                <div className="about-table-value">64</div>
-                <div className="about-table-key">Growth Rate</div>
-                <div className="about-table-value">Medium Slow</div>
-            </div>
+            <Heading>Training</Heading>
+            <AboutTable>
+                <TableKey>EV Yield</TableKey>
+                <TableValue>1 Special Attack</TableValue>
+                <TableKey>Catch Rate</TableKey>
+                <TableValue>45 (5.9% with PokéBall, full HP)</TableValue>
+                <TableKey>Base Friendship</TableKey>
+                <TableValue>70 (normal)</TableValue>
+                <TableKey>Base Exp</TableKey>
+                <TableValue>64</TableValue>
+                <TableKey>Growth Rate</TableKey>
+                <TableValue>Medium Slow</TableValue>
+            </AboutTable>
 
-            <h4>Breeding</h4>
-            <div class="about-table">
-                <div className="about-table-key">Gender</div>
-                <div className="about-table-value">
-                    <div className="gender">
-                        <div className="male-gender">♀ 87.5%,</div>
-                        <div className="female-gender">♂ 12.5%</div>
-                    </div>
-                </div>
-                <div className="about-table-key">Egg Groups</div>
-                <div className="about-table-value">Grass, Monster</div>
-                <div className="about-table-key">Egg Cycles</div>
-                <div className="about-table-value">20 (4,884 - 5,140 steps)</div>
-            </div>
+            <Heading>Breeding</Heading>
+            <AboutTable>
+                <TableKey>Gender</TableKey>
+                <TableValue>
+                    <Gender>
+                        <MaleGender>♀ 87.5%,</MaleGender>
+                        <FemaleGender>♂ 12.5%</FemaleGender>
+                    </Gender>
+                </TableValue>
+                <TableKey>Egg Groups</TableKey>
+                <TableValue>Grass, Monster</TableValue>
+                <TableKey>Egg Cycles</TableKey>
+                <TableValue>20 (4,884 - 5,140 steps)</TableValue>
+            </AboutTable>
 
-            <h4>Location</h4>
-            <div class="about-table">
-                <div className="about-table-key">001</div>
-                <div className="about-table-value">(Red/Blue/Yellow)</div>
-                <div className="about-table-key">226</div>
-                <div className="about-table-value">(Gold/Silver/Crystal)</div>
-                <div className="about-table-key">001</div>
-                <div className="about-table-value">(FireRed/LeafGreen)</div>
-                <div className="about-table-key">231</div>
-                <div className="about-table-value">(HeartGold/SoulSilver)</div>
-                <div className="about-table-key">080</div>
-                <div className="about-table-value">(X/Y - Central Kalos)</div>
-                <div className="about-table-key">001</div>
-                <div className="about-table-value">(Let's Go Pikachu/Let's Go Eevee)</div>
-            </div>
-        </section>
+            <Heading>Location</Heading>
+            <AboutTable>
+                <TableKey>001</TableKey>
+                <TableValue>(Red/Blue/Yellow)</TableValue>
+                <TableKey>226</TableKey>
+                <TableValue>(Gold/Silver/Crystal)</TableValue>
+                <TableKey>001</TableKey>
+                <TableValue>(FireRed/LeafGreen)</TableValue>
+                <TableKey>231</TableKey>
+                <TableValue>(HeartGold/SoulSilver)</TableValue>
+                <TableKey>080</TableKey>
+                <TableValue>(X/Y - Central Kalos)</TableValue>
+                <TableKey>001</TableKey>
+                <TableValue>(Let's Go Pikachu/Let's Go Eevee)</TableValue>
+            </AboutTable>
+        </AboutInfoSection>
     );
 }
 
