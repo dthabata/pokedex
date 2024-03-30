@@ -73,3 +73,7 @@
         padding-right: 5%;
     }
 }
+
+.element img {
+    margin-right: 5px;
+}
