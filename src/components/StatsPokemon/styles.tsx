@@ -39,17 +39,26 @@ export const StyledContent = styled.div`
 export const StyledSkills = styled.div`
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(4, auto);
-    gap: 2px 0;
-    margin-top: 25px;
+    grid-auto-rows: auto;
+    gap: 2px 10px;
+    margin-top: 15px;
+    align-self: self-start;
+    max-width: 50%;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 `;
 
 export const StyledImage = styled.img`
     margin-top: 20px;
-    justify-self: left;
+    justify-self: center;
 `;
 
 export const StyledNumbers = styled.p`
     padding-left: 7px;
-    justify-self: left;
+    justify-self: center;
 `;
