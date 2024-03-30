@@ -12,7 +12,7 @@ import {
 import { Tabs } from 'antd';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
-import AboutPokemon from '../../components/AboutPokemon/index.js';
+import AboutPokemon from '../../components/AboutPokemon/index.tsx';
 import StatsPokemon from '../../components/StatsPokemon/index.js';
 import EvolutionPokemon from '../../components/EvolutionPokemon/index.js';
 

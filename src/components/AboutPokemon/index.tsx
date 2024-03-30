@@ -10,13 +10,13 @@ import {
     Gender,
     MaleGender,
     FemaleGender
-} from './styles.js';
+} from './styles';
 import badge1 from '../../assets/badge-1.png';
 import badge2 from '../../assets/badge-2.png';
 import badge3 from '../../assets/badge-3.png';
 import badge4 from '../../assets/badge-4.png';
 
-const AboutPokemon = () => {
+const AboutPokemon: React.FC = () => {
     return (
         <AboutInfoSection>
             <AboutInfoText>
