@@ -1,7 +1,6 @@
 import React from 'react';
 import { Flex, Progress } from 'antd';
-import content1 from '../../assets/content-1.png';
-import content2 from '../../assets/content-2.png';
+import badge1 from '../../assets/badge-1.png';
 import './styles.css';
 
 const StatsPokemon = () => {
@@ -24,9 +23,47 @@ const StatsPokemon = () => {
             <div className="stats-info-content">
             The effectiveness of each type on Bulbasaur.
             </div>
-            <div className="stats-info-skills">
-                <img className="stats-img" src={content1} alt="" />
-                <img className="stats-img" src={content2} alt="" />
+
+            <div class="stats-info-skills">
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+
+                <p class="random-numbers">2</p>
+                <p class="random-numbers">3</p>
+                <p class="random-numbers">6</p>
+                <p class="random-numbers">2</p>
+                <p class="random-numbers">0</p>
+                <p class="random-numbers">1</p>
+                <p class="random-numbers">0</p>
+                <p class="random-numbers">4</p>
+                <p class="random-numbers">5</p>
+
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+                <img className="stats-img" src={badge1} alt="" />
+
+                <p class="random-numbers">3</p>
+                <p class="random-numbers">0</p>
+                <p class="random-numbers">0</p>
+                <p class="random-numbers">1</p>
+                <p class="random-numbers">2</p>
+                <p class="random-numbers">3</p>
+                <p class="random-numbers">4</p>
+                <p class="random-numbers">4</p>
+                <p class="random-numbers">5</p>
             </div>
         </section>
     );
