@@ -41,7 +41,7 @@ export const StyledSkills = styled.div`
     grid-template-columns: repeat(9, 1fr);
     grid-auto-rows: auto;
     gap: 0 12px;
-    margin-top: 25px;
+    margin-top: 30px;
     align-self: self-start;
     max-width: 50%;
 
