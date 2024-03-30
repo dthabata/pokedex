@@ -1,7 +1,7 @@
 import React from 'react';
-import { StyledHeader } from './styles.js';
+import { StyledHeader } from './styles';
 
-const AppHeader = () => {
+const AppHeader: React.FC = () => {
     return (
         <StyledHeader>
             <h1>Pokédex</h1>

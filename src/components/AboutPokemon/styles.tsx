@@ -58,6 +58,7 @@ export const AboutImg = styled.img`
 export const Gender = styled.div`
     display: flex;
     gap: 6px;
+    font-weight: 500;
 `;
 
 export const MaleGender = styled.div`
