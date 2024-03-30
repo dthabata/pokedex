@@ -69,3 +69,41 @@ h4 {
     margin-top: 40px;
     padding: 30px;
 }
+
+@media screen and (max-width: 768px) {
+    .evolution-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .pokemon-evolution {
+        width: 80px;
+        height: 80px;
+        align-items: center;
+    }
+
+    .evolving-info {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .evolution-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .pokemon-evolution {
+        align-items: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .evolving-info {
+        margin-top: 0;
+    }
+}
