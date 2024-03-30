@@ -3,7 +3,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, min-content);
     color: #fff;
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 }
 
 .detail-header-wrapper {
