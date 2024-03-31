@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Space } from 'antd';
 import {
     StyledContent,
@@ -13,6 +13,9 @@ import {
 } from './styles';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
+import { useSelector } from 'react-redux';
+import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
+import { fetchPokemonList } from '../../redux/PokemonReducer';
 
 interface AppContentProps {}
 
@@ -21,6 +24,14 @@ const onSearch: (value: string, event?: React.ChangeEvent<HTMLInputElement> | Re
 };
 
 const AppContent: React.FC<AppContentProps> = () => {
+    
+    const dispatch: AppDispatch = useAppDispatch();
+    const pokemonList = useSelector((state: RootState) => state.pokemonList.pokemons)
+
+    useEffect(() => {
+        dispatch(fetchPokemonList())
+    }, [dispatch]);
+
     return (
         <StyledMain>
             <StyledContent>
@@ -35,186 +46,19 @@ const AppContent: React.FC<AppContentProps> = () => {
                 </Space>
             </StyledContent>
             <StyledSection>
-                <StyledCard>
+            
+            {pokemonList.map((pokemon, index) => (
+                <StyledCard key={index}>
                     <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
+                    <StyledH3>{pokemon?.name}</StyledH3>
                     <StyledElement>
                         <img src={typeGrass} alt="" />
                         <img src={typePoison} alt="" />
                     </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
+                    <StyledPokemon src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon?.id}.svg`} alt="" />
                 </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
-                <StyledCard>
-                    <StyledSpan>#002</StyledSpan>
-                    <StyledH3>Bulbasaur</StyledH3>
-                    <StyledElement>
-                        <img src={typeGrass} alt="" />
-                        <img src={typePoison} alt="" />
-                    </StyledElement>
-                    <StyledPokemon src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/448.svg" alt="" />
-                </StyledCard>
+                ))}
+            
             </StyledSection>
         </StyledMain>
     );

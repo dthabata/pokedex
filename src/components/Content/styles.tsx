@@ -19,7 +19,7 @@ export const StyledSearch = styled(Search)`
 `;
 
 export const StyledMain = styled.main`
-    background-color: #fff;
+    background-color: #fff; 
 `;
 
 export const StyledSection = styled.section`
