@@ -4,7 +4,7 @@ import { Input, Layout } from 'antd';
 const { Search } = Input;
 const { Content } = Layout;
 
-const pokemonBgColor: Record<string, string> = {
+export const pokemonBgColor: Record<string, string> = {
     "bug": "#8bd674",
     "dark": "#6f6e78",
     "dragon": "#7383b9",
@@ -25,7 +25,7 @@ const pokemonBgColor: Record<string, string> = {
     "water": "#58abf6",
 };
 
-const accessPokemonBgColor = (str: string) => {
+export const accessPokemonBgColor = (str: string) => {
     return pokemonBgColor[str];
 };
 

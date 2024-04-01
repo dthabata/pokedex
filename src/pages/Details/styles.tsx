@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import whiteDots from '../../assets/pattern-2.png';
 import pokeball from '../../assets/pokeball-2.png';
+import { accessPokemonBgColor } from '../../components/Content/styles';
 
 export const MainWrapper = styled.main`
     display: grid;
@@ -10,11 +11,14 @@ export const MainWrapper = styled.main`
     padding-bottom: 10px;
 `;
 
-export const DetailsHeaderWrapper = styled.section`
-    background-color: #8bbe8a;
+export const DetailsHeaderWrapper = styled.section<{ type: string }>`
     padding-top: 2rem;
     padding-bottom: 2rem;
     height: 210px;
+
+    ${({ type }) => type && `
+    background-color: ${accessPokemonBgColor(type)};
+`}
 `;
 
 export const DetailsHeader = styled.div`

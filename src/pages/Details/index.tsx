@@ -82,63 +82,63 @@ const Details: React.FC = () => {
                 </div>)
                 : (
             <MainWrapper>
-                    <DetailsHeaderWrapper>
-                        <DetailsHeader>
-                            <Button type="text" size="large" onClick={(event => handleBack())}>
-                                <div className="back-button">
-                                    <ArrowLeftOutlined />
-                                </div>
-                            </Button>
-                            <DetailsInfo>
-                                <DetailsImage>
-                                    <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonDetails?.id}.svg`} alt="" />
-                                </DetailsImage>
-                                <DetailsText>
-                                    <span>#{("000" + pokemonDetails?.id).slice(-3)}</span>
-                                    <h3>{pokemonDetails?.name}</h3>
-                                    <StyledElement>
-                                        {getTypesListByPokemon(pokemonDetails).map((value: any) => (
-                                            <>
-                                                {value === 'normal' && <img src={typeNormal} alt="" />}
-                                                {value === 'fighting' && <img src={typeFighting} alt="" />}
-                                                {value === 'flying' && <img src={typeFlying} alt="" />}
-                                                {value === 'poison' && <img src={typePoison} alt="" />}
-                                                {value === 'ground' && <img src={typeGround} alt="" />}
-                                                {value === 'rock' && <img src={typeRock} alt="" />}
-                                                {value === 'bug' && <img src={typeBug} alt="" />}
-                                                {value === 'ghost' && <img src={typeGhost} alt="" />}
-                                                {value === 'steel' &&  <img src={typeSteel} alt="" />}
-                                                {value === 'fire' && <img src={typeFire} alt="" />}
-                                                {value === 'water' && <img src={typeWater} alt="" />}
-                                                {value === 'grass' && <img src={typeGrass} alt="" />}
-                                                {value === 'electric' && <img src={typeElectric} alt="" />}
-                                                {value === 'psychic' && <img src={typePhychic} alt="" />}
-                                                {value === 'ice' && <img src={typeIce} alt="" />}
-                                                {value === 'dragon' && <img src={typeDragon} alt="" />}
-                                                {value === 'dark' && <img src={typeDark} alt="" />}
-                                                {value === 'fairy' && <img src={typeFairy} alt="" />}
-                                                {value === 'unknown' && <img src={typeNormal} alt="" />}
-                                                {value === 'shadow' && <img src={typeNormal} alt="" />}
-                                            </>
-                                        ))}
-                                    </StyledElement>
-                                </DetailsText>
-                            </DetailsInfo>
-                        </DetailsHeader>
-                    </DetailsHeaderWrapper>
-                    <DetailsBodyWrapper>
-                        <Tabs centered={true}>
-                            <TabPane tab="About" key="1" className="detail-body-wrapper-sm">
-                                <AboutPokemon />
-                            </TabPane>
-                            <TabPane tab="Stats" key="2" className="detail-body-wrapper-sm">
-                                <StatsPokemon />
-                            </TabPane>
-                            <TabPane tab="Evolution" key="3" className="detail-body-wrapper-sm">
-                                <EvolutionPokemon />
-                            </TabPane>
-                        </Tabs>
-                    </DetailsBodyWrapper>
+                <DetailsHeaderWrapper type={getTypesListByPokemon(pokemonDetails)[0] as string}>
+                    <DetailsHeader>
+                        <Button type="text" size="large" onClick={(event => handleBack())}>
+                            <div className="back-button">
+                                <ArrowLeftOutlined />
+                            </div>
+                        </Button>
+                        <DetailsInfo>
+                            <DetailsImage>
+                                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonDetails?.id}.svg`} alt="" />
+                            </DetailsImage>
+                            <DetailsText>
+                                <span>#{("000" + pokemonDetails?.id).slice(-3)}</span>
+                                <h3>{pokemonDetails?.name}</h3>
+                                <StyledElement>
+                                    {getTypesListByPokemon(pokemonDetails).map((value: any) => (
+                                        <>
+                                            {value === 'normal' && <img src={typeNormal} alt="" />}
+                                            {value === 'fighting' && <img src={typeFighting} alt="" />}
+                                            {value === 'flying' && <img src={typeFlying} alt="" />}
+                                            {value === 'poison' && <img src={typePoison} alt="" />}
+                                            {value === 'ground' && <img src={typeGround} alt="" />}
+                                            {value === 'rock' && <img src={typeRock} alt="" />}
+                                            {value === 'bug' && <img src={typeBug} alt="" />}
+                                            {value === 'ghost' && <img src={typeGhost} alt="" />}
+                                            {value === 'steel' &&  <img src={typeSteel} alt="" />}
+                                            {value === 'fire' && <img src={typeFire} alt="" />}
+                                            {value === 'water' && <img src={typeWater} alt="" />}
+                                            {value === 'grass' && <img src={typeGrass} alt="" />}
+                                            {value === 'electric' && <img src={typeElectric} alt="" />}
+                                            {value === 'psychic' && <img src={typePhychic} alt="" />}
+                                            {value === 'ice' && <img src={typeIce} alt="" />}
+                                            {value === 'dragon' && <img src={typeDragon} alt="" />}
+                                            {value === 'dark' && <img src={typeDark} alt="" />}
+                                            {value === 'fairy' && <img src={typeFairy} alt="" />}
+                                            {value === 'unknown' && <img src={typeNormal} alt="" />}
+                                            {value === 'shadow' && <img src={typeNormal} alt="" />}
+                                        </>
+                                    ))}
+                                </StyledElement>
+                            </DetailsText>
+                        </DetailsInfo>
+                    </DetailsHeader>
+                </DetailsHeaderWrapper>
+                <DetailsBodyWrapper>
+                    <Tabs centered={true}>
+                        <TabPane tab="About" key="1" className="detail-body-wrapper-sm">
+                            <AboutPokemon />
+                        </TabPane>
+                        <TabPane tab="Stats" key="2" className="detail-body-wrapper-sm">
+                            <StatsPokemon />
+                        </TabPane>
+                        <TabPane tab="Evolution" key="3" className="detail-body-wrapper-sm">
+                            <EvolutionPokemon />
+                        </TabPane>
+                    </Tabs>
+                </DetailsBodyWrapper>
             </MainWrapper>
             )}
         </DetailsContent>
