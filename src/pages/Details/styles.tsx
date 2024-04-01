@@ -32,16 +32,24 @@ export const DetailsHeader = styled.div`
         margin-bottom: 20px;
     }
 
-    // TODO:
-    // span:button {
-    // }
-
-    span {
+    span:first-child {
         font-weight: 400;
         font-size: 14px;
         text-align: left;
         margin-bottom: 10px;
         color: rgba(45, 45, 49, 0.8);
+    }
+
+    span:last-child {
+        font-weight: 700;
+        font-size: 24px;
+        text-align: left;
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    .ant-btn:hover {
+        background-color: transparent !important; /* Set background color to transparent */
     }
 `;
 

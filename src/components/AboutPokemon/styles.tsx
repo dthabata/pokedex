@@ -7,7 +7,7 @@ export const AboutInfoSection = styled.section`
     justify-content: center;
     text-align: center;
     align-items: left;
-    gap: 8px;
+    width: auto;
 `;
 
 export const Heading = styled.h4`
@@ -20,7 +20,7 @@ export const Heading = styled.h4`
 
 export const AboutTable = styled.div`
     display: grid;
-    grid-template-columns: 1fr 80%; 
+    grid-template-columns: 1fr 1fr; /* Adjust this line to change the space between columns */
     text-align: left;
     line-height: 42px;
 `;
@@ -38,4 +38,12 @@ export const TableKey = styled.div`
 
 export const TableValue = styled.div`
     color: rgba(116, 116, 118, 1);
+
+    .pokemon-types {
+        margin-top: 10px;
+    }
+
+    img:nth-child(2) {
+        margin-left: 8px;
+    }
 `;
