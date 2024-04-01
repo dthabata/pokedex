@@ -21,7 +21,6 @@ export const Heading = styled.h4`
 export const AboutTable = styled.div`
     display: grid;
     grid-template-columns: 1fr 80%; 
-    max-width: 280px;
     text-align: left;
     line-height: 42px;
 `;
@@ -35,27 +34,8 @@ export const TableItem = styled.div`
 export const TableKey = styled.div`
     color: rgba(23, 23, 27, 1);
     font-weight: 700;
-    min-width: 120px;
 `;
 
 export const TableValue = styled.div`
     color: rgba(116, 116, 118, 1);
-`;
-
-export const AboutImg = styled.img`
-    margin-left: 10px;
-`;
-
-export const Gender = styled.div`
-    display: flex;
-    gap: 6px;
-    font-weight: 500;
-`;
-
-export const MaleGender = styled.div`
-    color: #1677ff;
-`;
-
-export const FemaleGender = styled.div`
-    color: rgb(237, 110, 199);
 `;

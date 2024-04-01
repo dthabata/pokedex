@@ -5,10 +5,6 @@ import {
     AboutTable,
     TableKey,
     TableValue,
-    AboutImg,
-    Gender,
-    MaleGender,
-    FemaleGender
 } from './styles';
 import badge1 from '../../assets/badge-1.png';
 import badge2 from '../../assets/badge-2.png';

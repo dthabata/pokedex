@@ -72,12 +72,13 @@ const AppContent: React.FC = () => {
                     <StyledSection>
                         {
                             pokemonList.map((pokemon, index) => (
-                                <StyledCard key={index} 
+                                <StyledCard key={index}
                                     onClick={(event => handleLoadPokemonDetail(pokemon))}
-                                    singleCard={pokemonList.length === 1} // Pass the singleCard prop based on the condition
+                                    singleCard={pokemonList.length === 1}
                                 >
                                     <StyledSpan>#{("000" + pokemon?.id).slice(-3)}</StyledSpan>
                                     <StyledH3>{pokemon?.name}</StyledH3>
+                                        <p>{pokemon?.element}</p>
                                     <StyledElement>
                                         <img src={typeGrass} alt="" />
                                         <img src={typePoison} alt="" />
