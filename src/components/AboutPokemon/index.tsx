@@ -68,8 +68,7 @@ const AboutPokemon: React.FC = () => {
                                 {value === 'unknown' && <img src={badge8} alt="" />}
                                 {value === 'shadow' && <img src={badge8} alt="" />}
                             </>
-                        ))
-                        }
+                        ))}
                     </div>
                 </TableValue>
             </AboutTable>

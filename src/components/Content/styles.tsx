@@ -75,7 +75,7 @@ export const StyledSpan = styled.span`
     font-weight: 700;
     font-size: 12px;
     text-align: center;
-    margin-bottom: -50px;
+    margin-bottom: -40px;
     color: rgba(23, 23, 27, 0.6);
 `;
 
@@ -84,16 +84,19 @@ export const StyledH3 = styled.h3`
     margin-bottom: 5px;
     text-align: center;
     margin-bottom: -10px;
-    margin-top: -5px;
+    margin-top: -2px;
 `;
 
 export const StyledElement = styled.div`
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    min-width: 20%;
-    gap: 8px;
+    gap: 10px;
+
+    img {
+        height: 100%;
+    }
 `;
 
 export const StyledPokemon = styled.img`

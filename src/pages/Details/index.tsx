@@ -8,7 +8,7 @@ import {
     DetailsText,
     DetailsBodyWrapper,
     DetailsContent,
-    Element,
+    StyledElement,
 } from './styles';
 import typeBug from '../../assets/type-bug.png';
 import typeDark from '../../assets/type-dark.png';
@@ -39,7 +39,7 @@ import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
 import { fetchPokemonDetail } from '../../redux/PokemonDetailsReducer';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { IPokemonDetailsState } from '../../interfaces/pokemon-types';
-import { getAbilitiesListByPokemon, getTypesListByPokemon } from '../../services/pokemon-formatter'
+import { getTypesListByPokemon } from '../../services/pokemon-formatter'
 
 const { TabPane } = Tabs;
 
@@ -96,7 +96,7 @@ const Details: React.FC = () => {
                                 <DetailsText>
                                     <span>#{("000" + pokemonDetails?.id).slice(-3)}</span>
                                     <h3>{pokemonDetails?.name}</h3>
-                                    <Element>
+                                    <StyledElement>
                                         {getTypesListByPokemon(pokemonDetails).map((value: any) => (
                                             <>
                                                 {value === 'normal' && <img src={typeNormal} alt="" />}
@@ -120,9 +120,8 @@ const Details: React.FC = () => {
                                                 {value === 'unknown' && <img src={typeNormal} alt="" />}
                                                 {value === 'shadow' && <img src={typeNormal} alt="" />}
                                             </>
-                                        ))
-                                        }
-                                    </Element>
+                                        ))}
+                                    </StyledElement>
                                 </DetailsText>
                             </DetailsInfo>
                         </DetailsHeader>

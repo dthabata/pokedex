@@ -33,7 +33,7 @@ export const DetailsHeader = styled.div`
     }
 
     span:first-child {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 14px;
         text-align: left;
         margin-bottom: 10px;
@@ -110,7 +110,7 @@ export const DetailsBodyWrapper = styled.section`
     }
 `;
 
-export const Element = styled.div`
+export const StyledElement = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
