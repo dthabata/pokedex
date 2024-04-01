@@ -115,6 +115,10 @@ export const StyledH3 = styled.h3`
     text-align: center;
     margin-bottom: -10px;
     margin-top: -2px;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
 `;
 
 export const StyledElement = styled.div`

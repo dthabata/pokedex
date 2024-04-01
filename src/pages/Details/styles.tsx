@@ -102,6 +102,12 @@ export const DetailsContent = styled.div`
         color: #1677ff;
         border-radius: 4px;
     }
+
+    h3 {
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
 `;
 
 export const DetailsBodyWrapper = styled.section`
