@@ -65,7 +65,7 @@ export const DetailsImage = styled.div`
 `;
 
 export const DetailsText = styled.div`
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 20px;
 `;
 

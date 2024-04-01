@@ -22,7 +22,7 @@ export const StyledMain = styled.main`
     background-color: #fff; 
 `;
 
-export const StyledSection = styled.section<{ singleCard?: boolean }>`
+export const StyledSection = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem 2rem;
@@ -31,12 +31,6 @@ export const StyledSection = styled.section<{ singleCard?: boolean }>`
     padding-left: 2rem;
     padding-right: 2rem;
     justify-content: center;
-
-    ${({ singleCard }) => singleCard && `
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    `}
 `;
 
 export const StyledCard = styled.div<{ singleCard?: boolean }>`
@@ -98,8 +92,8 @@ export const StyledPokemon = styled.img`
     min-width: 100px;
     max-height: 220px;
     min-height: 100px;
-    margin-top: 20px;
-    margin-bottom: -20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     object-fit: contain;
     justify-self: center;
 `;

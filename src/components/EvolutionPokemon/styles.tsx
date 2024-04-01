@@ -88,28 +88,28 @@ export const StyledSection = styled.section`
     @media screen and (max-width: 480px) {
         .evolution-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr 1fr)); /* Adjust the column width as needed */
-            gap: 10px; /* Adjust the gap between grid items */
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr 1fr));
+            gap: 10px;
             justify-items: center;
             margin: 0;
             padding-bottom: 10px;
         }
     
         .grid-item {
-            width: 100%; /* Ensure each item occupies full width of the column */
+            width: 100%;
             text-align: center;
-            margin-bottom: 0; /* Adjust vertical spacing between grid items */
+            margin-bottom: 0;
             padding: 0;
         }
     
         .pokemon-evolution {
-            width: 30px; /* Adjust the size of the image */
+            width: 30px;
             height: 30px;
             padding: 10px;
         }
     
         .evolving-info {
-            margin-top: 5px; /* Adjust top margin for the evolving info */
+            margin-top: 5px;
         }
     }
 `;
