@@ -11,42 +11,17 @@ import badge2 from '../../assets/badge-2.png';
 import badge3 from '../../assets/badge-3.png';
 import badge4 from '../../assets/badge-4.png';
 import { useSelector } from 'react-redux';
-import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
-import { IPokemon } from '../../interfaces/pokemon-types';
+import { RootState } from '../../redux/index';
+import { IPokemonDetailsState } from '../../interfaces/pokemon-types';
+import { getAbilitiesListByPokemon, getTypesListByPokemon } from '../../services/pokemon-formatter'
 
-interface PokemonAboutState {
-    pokemon: any;
-}
 
 const AboutPokemon: React.FC = () => {
-    const pokemonDetails = useSelector((state: RootState) => (state.pokemonDetails as PokemonAboutState).pokemon);
+    const pokemonDetails = useSelector((state: RootState) => (state.pokemonDetails as IPokemonDetailsState).pokemon);
 
-    const abilitiesFormat = (abilities: any[] | undefined) =>{
-        const list = new Array();
-        if (abilities && abilities.length > 0) {
-            abilities?.map((ability, index) => ( 
-                list.push(ability?.ability?.name)
-            ));
-        }
-        return list.join(', ');
-    }
-
-    const typesFormat = (types: any[] | undefined) =>{
-        const list = new Array();
-        if (types && types.length > 0) {
-            types?.map((type, index) => ( 
-                list.push(type?.type?.name)
-            ))   
-        }
-        return list;
-    }
 
     return (
         <AboutInfoSection>
-            {/* <AboutInfoText>
-                Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.
-            </AboutInfoText> */}
-
             <Heading>Pokédex Data</Heading>
             <AboutTable>
                 <TableKey>Height</TableKey>
@@ -54,17 +29,20 @@ const AboutPokemon: React.FC = () => {
                 <TableKey>Weight</TableKey>
                 <TableValue>{pokemonDetails?.weight} g</TableValue>
                 <TableKey>Abilities</TableKey>
-                <TableValue>{abilitiesFormat(pokemonDetails?.abilities)}</TableValue>
+                <TableValue>{getAbilitiesListByPokemon(pokemonDetails).join(", ")} </TableValue>
                 <TableKey>Type</TableKey>
-                <TableValue>{typesFormat(pokemonDetails?.types)}</TableValue>
                 
-                {/* <TableValue>
-                    <AboutImg src={badge1} alt="" />
-                    <AboutImg src={badge2} alt="" />
-                    <AboutImg src={badge3} alt="" />
-                    <AboutImg src={badge4} alt="" />
-                </TableValue> */}
+                <TableValue>{getTypesListByPokemon(pokemonDetails).join(", ")}</TableValue>
+                
+                    <TableValue>
+                    {
+                        getTypesListByPokemon(pokemonDetails).map((item: { value: string }) => (
+                            item.value === 'normal' &&  <img src={badge1} alt="" />
+                        ))
+                    }
 
+                    
+                    </TableValue>
             </AboutTable>
 
             {/* <Heading>Training</Heading>

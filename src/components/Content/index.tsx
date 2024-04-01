@@ -20,6 +20,7 @@ import { fetchPokemonList, pokemonListReset } from '../../redux/PokemonListReduc
 import { useNavigate } from 'react-router-dom';
 import { IPokemon } from '../../interfaces/pokemon-types';
 import { pokemonAdd } from '../../redux/PokemonDetailsReducer';
+import { getAbilitiesListByPokemon, getTypesListByPokemon } from '../../services/pokemon-formatter'
 
 const AppContent: React.FC = () => {
     const navigate = useNavigate();

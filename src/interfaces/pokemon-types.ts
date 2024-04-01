@@ -17,7 +17,6 @@ export interface IPokemonDetailsState {
     error: string | null;
 }
 
-
 export interface IPokemon {
     id: number;
     name: string;

@@ -22,22 +22,18 @@ import { useSelector } from 'react-redux';
 import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
 import { fetchPokemonDetail } from '../../redux/PokemonDetailsReducer';
 import { ArrowLeftOutlined } from '@ant-design/icons';
+import { IPokemonDetailsState } from '../../interfaces/pokemon-types';
+import { getAbilitiesListByPokemon, getTypesListByPokemon } from '../../services/pokemon-formatter'
 
 const { TabPane } = Tabs;
-
-interface PokemonDetailsState {
-    pokemon: any;
-    loading: boolean;
-    error: string | null;
-}
 
 const Details: React.FC = () => {
     const { name } = useParams();
 
     const dispatch: AppDispatch = useAppDispatch();
-    const pokemonDetails = useSelector((state: RootState) => (state.pokemonDetails as PokemonDetailsState).pokemon);
-    const pokemonDetailsLoading = useSelector((state: RootState) => (state.pokemonDetails as PokemonDetailsState).loading);
-    const pokemonDetailsError = useSelector((state: RootState) => (state.pokemonDetails as PokemonDetailsState).error);
+    const pokemonDetails = useSelector((state: RootState) => (state.pokemonDetails as IPokemonDetailsState).pokemon);
+    const pokemonDetailsLoading = useSelector((state: RootState) => (state.pokemonDetails as IPokemonDetailsState).loading);
+    const pokemonDetailsError = useSelector((state: RootState) => (state.pokemonDetails as IPokemonDetailsState).error);
 
     const navigate = useNavigate();
     
