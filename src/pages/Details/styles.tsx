@@ -24,7 +24,7 @@ export const DetailsHeader = styled.div`
     padding-top: 2rem;
     background: url(${whiteDots}), url(${pokeball}); 
     background-size: 4rem, 12%;
-    background-position: top 0px right 32%, top 65% left 40%;
+    background-position: top 0px right 32%, top 90% left 32%;
     background-repeat: no-repeat;
 
     h3 {
@@ -49,15 +49,15 @@ export const DetailsInfo = styled.div`
     align-content: center;
     text-align: center;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 `;
 
 export const DetailsImage = styled.div`
     img {
         width: 90%;
-        height: 90%;
-        max-width: 200px;
-        min-width: 100px;
+        height: 100%;
+        max-width: 150px;
+        min-width: 50px;
         max-height: 220px;
         min-height: 100px;
         object-fit: contain;
