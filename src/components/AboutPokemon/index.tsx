@@ -72,7 +72,6 @@ const AboutPokemon: React.FC = () => {
                         }
                     </div>
                 </TableValue>
-                <TableValue>{getTypesListByPokemon(pokemonDetails).join(", ")}</TableValue>
             </AboutTable>
         </AboutInfoSection>
     );

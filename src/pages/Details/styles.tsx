@@ -24,7 +24,7 @@ export const DetailsHeader = styled.div`
     padding-top: 2rem;
     background: url(${whiteDots}), url(${pokeball}); 
     background-size: 4rem, 12%;
-    background-position: top 0px right 32%, top 90% left 32%;
+    background-position: top 0px right 32%, top 70% left 37%;
     background-repeat: no-repeat;
 
     h3 {
@@ -49,7 +49,14 @@ export const DetailsHeader = styled.div`
     }
 
     .ant-btn:hover {
-        background-color: transparent !important; /* Set background color to transparent */
+        background-color: transparent !important;
+    }
+
+    @media screen and (max-width: 425px) {
+        background: url(${whiteDots}), url(${pokeball}); 
+        background-size: 4rem, 20%;
+        background-position: top 0px right 32%, top 70% left 15%;
+        background-repeat: no-repeat;
     }
 `;
 
@@ -67,10 +74,10 @@ export const DetailsInfo = styled.div`
 export const DetailsImage = styled.div`
     img {
         width: 90%;
-        height: 100%;
+        height: 200px;
         max-width: 150px;
         min-width: 50px;
-        max-height: 220px;
+        max-height: 80%;
         min-height: 100px;
         object-fit: contain;
     }
@@ -104,7 +111,13 @@ export const DetailsBodyWrapper = styled.section`
 `;
 
 export const Element = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
     img {
-        margin-right: 5px;
+        height: 25px;
     }
 `;

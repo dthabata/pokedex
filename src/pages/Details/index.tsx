@@ -10,11 +10,27 @@ import {
     DetailsContent,
     Element,
 } from './styles';
+import typeBug from '../../assets/type-bug.png';
+import typeDark from '../../assets/type-dark.png';
+import typeDragon from '../../assets/type-dragon.png';
+import typeElectric from '../../assets/type-electric.png';
+import typeFairy from '../../assets/type-fairy.png';
+import typeFighting from '../../assets/type-fighting.png';
+import typeFire from '../../assets/type-fire.png';
+import typeFlying from '../../assets/type-flying.png';
+import typeGhost from '../../assets/type-ghost.png';
+import typeGrass from '../../assets/type-grass.png';
+import typeGround from '../../assets/type-ground.png';
+import typeIce from '../../assets/type-ice.png';
+import typeNormal from '../../assets/type-normal.png';
+import typePoison from '../../assets/type-poison.png';
+import typePhychic from '../../assets/type-psychic.png';
+import typeRock from '../../assets/type-rock.png';
+import typeSteel from '../../assets/type-steel.png';
+import typeWater from '../../assets/type-water.png';
 import { Tabs, Button, Spin } from 'antd';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import typeGrass from '../../assets/grass.png';
-import typePoison from '../../assets/poison.png';
 import AboutPokemon from '../../components/AboutPokemon';
 import StatsPokemon from '../../components/StatsPokemon';
 import EvolutionPokemon from '../../components/EvolutionPokemon';
@@ -81,8 +97,31 @@ const Details: React.FC = () => {
                                     <span>#{("000" + pokemonDetails?.id).slice(-3)}</span>
                                     <h3>{pokemonDetails?.name}</h3>
                                     <Element>
-                                        <img src={typeGrass} alt="" />
-                                        <img src={typePoison} alt="" />
+                                        {getTypesListByPokemon(pokemonDetails).map((value: any) => (
+                                            <>
+                                                {value === 'normal' && <img src={typeNormal} alt="" />}
+                                                {value === 'fighting' && <img src={typeFighting} alt="" />}
+                                                {value === 'flying' && <img src={typeFlying} alt="" />}
+                                                {value === 'poison' && <img src={typePoison} alt="" />}
+                                                {value === 'ground' && <img src={typeGround} alt="" />}
+                                                {value === 'rock' && <img src={typeRock} alt="" />}
+                                                {value === 'bug' && <img src={typeBug} alt="" />}
+                                                {value === 'ghost' && <img src={typeGhost} alt="" />}
+                                                {value === 'steel' &&  <img src={typeSteel} alt="" />}
+                                                {value === 'fire' && <img src={typeFire} alt="" />}
+                                                {value === 'water' && <img src={typeWater} alt="" />}
+                                                {value === 'grass' && <img src={typeGrass} alt="" />}
+                                                {value === 'electric' && <img src={typeElectric} alt="" />}
+                                                {value === 'psychic' && <img src={typePhychic} alt="" />}
+                                                {value === 'ice' && <img src={typeIce} alt="" />}
+                                                {value === 'dragon' && <img src={typeDragon} alt="" />}
+                                                {value === 'dark' && <img src={typeDark} alt="" />}
+                                                {value === 'fairy' && <img src={typeFairy} alt="" />}
+                                                {value === 'unknown' && <img src={typeNormal} alt="" />}
+                                                {value === 'shadow' && <img src={typeNormal} alt="" />}
+                                            </>
+                                        ))
+                                        }
                                     </Element>
                                 </DetailsText>
                             </DetailsInfo>
