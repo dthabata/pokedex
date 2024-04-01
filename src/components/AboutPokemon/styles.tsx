@@ -20,7 +20,7 @@ export const Heading = styled.h4`
 
 export const AboutTable = styled.div`
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Adjust this line to change the space between columns */
+    grid-template-columns: 1fr 1fr;
     text-align: left;
     line-height: 42px;
 `;
@@ -34,16 +34,26 @@ export const TableItem = styled.div`
 export const TableKey = styled.div`
     color: rgba(23, 23, 27, 1);
     font-weight: 700;
+    diplay: flex !important;
 `;
 
 export const TableValue = styled.div`
     color: rgba(116, 116, 118, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: auto;
 
     .pokemon-types {
         margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    img:nth-child(2) {
-        margin-left: 8px;
+    img {
+        margin: 5px;
     }
 `;

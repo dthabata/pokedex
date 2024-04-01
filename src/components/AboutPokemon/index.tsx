@@ -34,7 +34,7 @@ const AboutPokemon: React.FC = () => {
 
     return (
         <AboutInfoSection>
-            <Heading>Pokédex Data</Heading>
+            <Heading>Pokémon Data</Heading>
             <AboutTable>
                 <TableKey>Height</TableKey>
                 <TableValue>{pokemonDetails?.height} cm</TableValue>
@@ -45,8 +45,8 @@ const AboutPokemon: React.FC = () => {
                 <TableKey>Type</TableKey>                
                 <TableValue>
                     <div className="pokemon-types">
-                        {getTypesListByPokemon(pokemonDetails).map((value: any) => (
-                            <>
+                        {getTypesListByPokemon(pokemonDetails).map((value: any, index: number) => (
+                            <div key={index}>
                                 {value === 'normal' && <img src={badge8} alt="" />}
                                 {value === 'fighting' && <img src={badge9} alt="" />}
                                 {value === 'flying' && <img src={badge2} alt="" />}
@@ -67,7 +67,7 @@ const AboutPokemon: React.FC = () => {
                                 {value === 'fairy' && <img src={badge18} alt="" />}
                                 {value === 'unknown' && <img src={badge8} alt="" />}
                                 {value === 'shadow' && <img src={badge8} alt="" />}
-                            </>
+                            </div>
                         ))}
                     </div>
                 </TableValue>

@@ -84,8 +84,8 @@ const AppContent: React.FC = () => {
                 : (
                     <StyledSection>
                         {
-                            pokemonList.map((pokemon, index) => (
-                                <StyledCard key={index}
+                            pokemonList.map((pokemon) => (
+                                <StyledCard key={pokemon.id}
                                     onClick={(event => handleLoadPokemonDetail(pokemon))}
                                     singleCard={pokemonList.length === 1}
                                     type={getTypesListByPokemon(pokemon)[0] as string}
@@ -93,8 +93,8 @@ const AppContent: React.FC = () => {
                                     <StyledSpan>#{("000" + pokemon?.id).slice(-3)}</StyledSpan>
                                     <StyledH3>{pokemon?.name}</StyledH3>
                                     <StyledElement>
-                                        {getTypesListByPokemon(pokemon).map((value: any) => (
-                                            <>
+                                        {getTypesListByPokemon(pokemon).map((value: any, index: number) => (
+                                            <div key={index}>
                                                 {value === 'normal' && <img src={typeNormal} alt="" />}
                                                 {value === 'fighting' && <img src={typeFighting} alt="" />}
                                                 {value === 'flying' && <img src={typeFlying} alt="" />}
@@ -115,7 +115,7 @@ const AppContent: React.FC = () => {
                                                 {value === 'fairy' && <img src={typeFairy} alt="" />}
                                                 {value === 'unknown' && <img src={typeNormal} alt="" />}
                                                 {value === 'shadow' && <img src={typeNormal} alt="" />}
-                                            </>
+                                            </div>
                                         ))}
                                     </StyledElement>
                                     <StyledPokemon src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon?.id}.svg`} alt="" />

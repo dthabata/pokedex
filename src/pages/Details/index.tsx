@@ -41,8 +41,6 @@ import { ArrowLeftOutlined } from '@ant-design/icons';
 import { IPokemonDetailsState } from '../../interfaces/pokemon-types';
 import { getTypesListByPokemon } from '../../services/pokemon-formatter'
 
-const { TabPane } = Tabs;
-
 const Details: React.FC = () => {
     const { name } = useParams();
 
@@ -74,6 +72,24 @@ const Details: React.FC = () => {
         navigate(`/`);
     }
 
+    const items = [
+        {
+            key: '1',
+            label: 'About',
+            children: <AboutPokemon />,
+            },
+            {
+            key: '2',
+            label: 'Stats',
+            children: <StatsPokemon />,
+            },
+            {
+            key: '3',
+            label: 'Evolution',
+            children: <EvolutionPokemon />,
+            },
+    ];
+    
     return(
         <DetailsContent>
             {pokemonDetailsLoading ?
@@ -97,8 +113,8 @@ const Details: React.FC = () => {
                                 <span>#{("000" + pokemonDetails?.id).slice(-3)}</span>
                                 <h3>{pokemonDetails?.name}</h3>
                                 <StyledElement>
-                                    {getTypesListByPokemon(pokemonDetails).map((value: any) => (
-                                        <>
+                                    {getTypesListByPokemon(pokemonDetails).map((value: any, index: number) => (
+                                        <div key={index}>
                                             {value === 'normal' && <img src={typeNormal} alt="" />}
                                             {value === 'fighting' && <img src={typeFighting} alt="" />}
                                             {value === 'flying' && <img src={typeFlying} alt="" />}
@@ -119,7 +135,7 @@ const Details: React.FC = () => {
                                             {value === 'fairy' && <img src={typeFairy} alt="" />}
                                             {value === 'unknown' && <img src={typeNormal} alt="" />}
                                             {value === 'shadow' && <img src={typeNormal} alt="" />}
-                                        </>
+                                        </div>
                                     ))}
                                 </StyledElement>
                             </DetailsText>
@@ -127,17 +143,11 @@ const Details: React.FC = () => {
                     </DetailsHeader>
                 </DetailsHeaderWrapper>
                 <DetailsBodyWrapper>
-                    <Tabs centered={true}>
-                        <TabPane tab="About" key="1" className="detail-body-wrapper-sm">
-                            <AboutPokemon />
-                        </TabPane>
-                        <TabPane tab="Stats" key="2" className="detail-body-wrapper-sm">
-                            <StatsPokemon />
-                        </TabPane>
-                        <TabPane tab="Evolution" key="3" className="detail-body-wrapper-sm">
-                            <EvolutionPokemon />
-                        </TabPane>
-                    </Tabs>
+                    <Tabs
+                        defaultActiveKey="1"
+                        centered
+                        items={items}
+                    />
                 </DetailsBodyWrapper>
             </MainWrapper>
             )}
