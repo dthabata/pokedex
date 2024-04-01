@@ -32,12 +32,16 @@ export const DetailsHeader = styled.div`
         margin-bottom: 20px;
     }
 
+    // TODO:
+    // span:button {
+    // }
+
     span {
-        font-weight: 700;
-        font-size: 12px;
-        text-align: center;
-        margin-bottom: -50px;
-        color: rgba(23, 23, 27, 0.6);
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 10px;
+        color: rgba(45, 45, 49, 0.8);
     }
 `;
 

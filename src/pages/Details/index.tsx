@@ -72,7 +72,7 @@ const Details: React.FC = () => {
             <MainWrapper>
                     <DetailsHeaderWrapper>
                         <DetailsHeader>
-                            <Button type="text"  onClick={(event => handleBack())}>
+                            <Button type="text" size="large" onClick={(event => handleBack())}>
                                 <div className="back-button">
                                     <ArrowLeftOutlined />
                                 </div>
