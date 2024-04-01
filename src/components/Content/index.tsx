@@ -65,7 +65,7 @@ const AppContent: React.FC = () => {
                 </Space>
             </StyledContent>
             {pokemonListLoading ?
-                (<div> 
+                (<div className="loading-spin"> 
                     <Spin size="large" /> 
                 </div>)
                 : (

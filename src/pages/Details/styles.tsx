@@ -69,6 +69,18 @@ export const DetailsText = styled.div`
     font-size: 20px;
 `;
 
+export const DetailsContent = styled.div`
+    .loading-spin {
+        margin: 85px 0;
+        margin-bottom: 20px;
+        padding: 30px 50px;
+        text-align: center;
+        background: #fff;
+        color: #1677ff;
+        border-radius: 4px;
+    }
+`;
+
 export const DetailsBodyWrapper = styled.section`
     max-width: 600px;
     margin: 0 auto;

@@ -7,6 +7,7 @@ import {
     DetailsImage,
     DetailsText,
     DetailsBodyWrapper,
+    DetailsContent,
     Element,
 } from './styles';
 import { Tabs, Button, Spin } from 'antd';
@@ -20,6 +21,7 @@ import EvolutionPokemon from '../../components/EvolutionPokemon';
 import { useSelector } from 'react-redux';
 import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
 import { fetchPokemonDetail } from '../../redux/PokemonDetailsReducer';
+import { ArrowLeftOutlined } from '@ant-design/icons';
 
 const { TabPane } = Tabs;
 
@@ -61,16 +63,20 @@ const Details: React.FC = () => {
     }
 
     return(
-        <>
-        {pokemonDetailsLoading ?
-            (<div> 
-                <Spin size="large" /> 
-            </div>)
-            : (
+        <DetailsContent>
+            {pokemonDetailsLoading ?
+                (<div className="loading-spin"> 
+                    <Spin size="large" /> 
+                </div>)
+                : (
             <MainWrapper>
                     <DetailsHeaderWrapper>
                         <DetailsHeader>
-                            <Button type="text"  onClick={(event => handleBack())}>VOLTAR</Button>
+                            <Button type="text"  onClick={(event => handleBack())}>
+                                <div className="back-button">
+                                    <ArrowLeftOutlined />
+                                </div>
+                            </Button>
                             <DetailsInfo>
                                 <DetailsImage>
                                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonDetails?.id}.svg`} alt="" />
@@ -103,8 +109,8 @@ const Details: React.FC = () => {
                         </Tabs>
                     </DetailsBodyWrapper>
             </MainWrapper>
-        )}
-        </>
+            )}
+        </DetailsContent>
     );
 };
 

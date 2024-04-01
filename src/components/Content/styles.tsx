@@ -19,7 +19,17 @@ export const StyledSearch = styled(Search)`
 `;
 
 export const StyledMain = styled.main`
-    background-color: #fff; 
+    background-color: #fff;
+
+    .loading-spin {
+        margin: 20px 0;
+        margin-bottom: 20px;
+        padding: 30px 50px;
+        text-align: center;
+        background: #fff;
+        color: #1677ff;
+        border-radius: 4px;
+    }
 `;
 
 export const StyledSection = styled.section`
@@ -31,6 +41,7 @@ export const StyledSection = styled.section`
     padding-left: 2rem;
     padding-right: 2rem;
     justify-content: center;
+    margin-bottom: 40px;
 `;
 
 export const StyledCard = styled.div<{ singleCard?: boolean }>`

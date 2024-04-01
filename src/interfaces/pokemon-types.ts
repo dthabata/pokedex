@@ -35,6 +35,7 @@ export interface IPokemon {
     inputValue: any;
     toLowerCase: any;
     element: any;
+    fullscreen: boolean;
 }
 
 // Due to a time limitation, the return object wasn't entirely mapped. This is an example of how to map objects and develop interfaces. To have the whole process complete, in addition to the Pokémon interface, all the other objects must be mapped.
