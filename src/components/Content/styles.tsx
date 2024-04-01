@@ -24,7 +24,7 @@ export const StyledMain = styled.main`
 
 export const StyledSection = styled.section`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem 2rem;
     background-color: #fff;
     padding-top: 1rem;
@@ -93,7 +93,7 @@ export const StyledPokemon = styled.img`
     max-height: 220px;
     min-height: 100px;
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     object-fit: contain;
     justify-self: center;
 `;
@@ -106,6 +106,6 @@ display: flex;
     color: rgba(116, 116, 118, 1);
     font-size: 16px;
     line-height: 15px;
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 10px;
 `;
