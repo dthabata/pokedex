@@ -34,7 +34,7 @@ import { useSelector } from 'react-redux';
 import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
 import { fetchPokemonList, pokemonListReset } from '../../redux/PokemonListReducer';
 import { useNavigate } from 'react-router-dom';
-import { IPokemon, IPokemonDetailsState } from '../../interfaces/pokemon-types';
+import { IPokemon } from '../../interfaces/pokemon-types';
 import { pokemonAdd } from '../../redux/PokemonDetailsReducer';
 import { getTypesListByPokemon } from '../../services/pokemon-formatter'
 

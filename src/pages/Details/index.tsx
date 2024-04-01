@@ -56,7 +56,7 @@ const Details: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        // If url Pokémon data is incorrect, returns to list
+        // If url Pokémon data is incorrect, returns to main list
         if (!pokemonDetails && pokemonDetailsError && pokemonDetailsError.length > 0) {
             navigate(`/`);
         }
