@@ -23,8 +23,8 @@ export const DetailsHeader = styled.div`
     margin-top: -2rem;
     padding-top: 2rem;
     background: url(${whiteDots}), url(${pokeball}); 
-    background-size: 4rem, 15%;
-    background-position: top 0px right 32%, top 50% left 35%;
+    background-size: 4rem, 12%;
+    background-position: top 0px right 32%, top 65% left 40%;
     background-repeat: no-repeat;
 
     h3 {
@@ -49,18 +49,24 @@ export const DetailsInfo = styled.div`
     align-content: center;
     text-align: center;
     justify-content: center;
+    gap: 10px;
 `;
 
 export const DetailsImage = styled.div`
     img {
-        height: 70%;
-        width: 200px;
+        width: 90%;
+        height: 90%;
+        max-width: 200px;
+        min-width: 100px;
+        max-height: 220px;
+        min-height: 100px;
         object-fit: contain;
     }
 `;
 
 export const DetailsText = styled.div`
-    margin-top: 40px;
+    margin-top: 15px;
+    font-size: 20px;
 `;
 
 export const DetailsBodyWrapper = styled.section`

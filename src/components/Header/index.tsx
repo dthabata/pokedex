@@ -5,7 +5,7 @@ const AppHeader: React.FC = () => {
     return (
         <StyledHeader>
             <h1>Pokédex</h1>
-            <p>Search the Pokémon by its name!</p>
+            <p>Search the Pokémon by its name or ID!</p>
         </StyledHeader>
     );
 }

@@ -9,7 +9,8 @@ import {
     StyledSpan,
     StyledH3,
     StyledElement,
-    StyledPokemon
+    StyledPokemon,
+    AboutInfoText,
 } from './styles';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
@@ -31,9 +32,9 @@ const AppContent: React.FC = () => {
         const pokemonName = value
     
         dispatch(pokemonListReset())
-        dispatch(fetchPokemonList( {name: pokemonName, offset: 0, limit: 30}))
+        dispatch(fetchPokemonList({name: pokemonName.toLowerCase(), offset: 0, limit: 30}))
     };
-    
+
     useEffect(() => {
         // 500 was an arbitrary choice of number
         const randomOffset = Math.floor(Math.random() * (500 - 1 + 1) + 1);
@@ -63,31 +64,35 @@ const AppContent: React.FC = () => {
                     />
                 </Space>
             </StyledContent>
-
             {pokemonListLoading ?
                 (<div> 
                     <Spin size="large" /> 
                 </div>)
-                : (<StyledSection>
-                    {
-                        pokemonList.map((pokemon, index) => (
-                        <StyledCard key={index} 
-                            onClick={(event => handleLoadPokemonDetail(pokemon))}>
-                            <StyledSpan>#{("000" + pokemon?.id).slice(-3)}</StyledSpan>
-                            <StyledH3>{pokemon?.name}</StyledH3>
-                            <StyledElement>
-                                <img src={typeGrass} alt="" />
-                                <img src={typePoison} alt="" />
-                            </StyledElement>
-                            <StyledPokemon src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon?.id}.svg`} alt="" />
-                        </StyledCard>
-                        ))
-                    }
-                </StyledSection>
+                : (
+                    <StyledSection>
+                        {
+                            pokemonList.map((pokemon, index) => (
+                                <StyledCard key={index} 
+                                    onClick={(event => handleLoadPokemonDetail(pokemon))}
+                                    singleCard={pokemonList.length === 1} // Pass the singleCard prop based on the condition
+                                >
+                                    <StyledSpan>#{("000" + pokemon?.id).slice(-3)}</StyledSpan>
+                                    <StyledH3>{pokemon?.name}</StyledH3>
+                                    <StyledElement>
+                                        <img src={typeGrass} alt="" />
+                                        <img src={typePoison} alt="" />
+                                    </StyledElement>
+                                    <StyledPokemon src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon?.id}.svg`} alt="" />
+                                </StyledCard>
+                            ))
+                        }
+                    </StyledSection>
                 )
             }
             {(!pokemonListLoading && pokemonList.length === 0 ) && 
-                <div>NENHUM RESULTADO ENCONTRADO</div>
+                <AboutInfoText>
+                    Pokémon was not found. Please verify if the data is correct.
+                </AboutInfoText>
             }
         </StyledMain>
     );

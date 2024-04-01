@@ -1,7 +1,6 @@
 import React from 'react';
 import {
     AboutInfoSection,
-    AboutInfoText,
     Heading,
     AboutTable,
     TableKey,
@@ -15,7 +14,6 @@ import badge1 from '../../assets/badge-1.png';
 import badge2 from '../../assets/badge-2.png';
 import badge3 from '../../assets/badge-3.png';
 import badge4 from '../../assets/badge-4.png';
-
 import { useSelector } from 'react-redux';
 import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
 import { IPokemon } from '../../interfaces/pokemon-types';
@@ -71,10 +69,9 @@ const AboutPokemon: React.FC = () => {
                     <AboutImg src={badge4} alt="" />
                 </TableValue> */}
 
-
             </AboutTable>
 
-            <Heading>Training</Heading>
+            {/* <Heading>Training</Heading>
             <AboutTable>
                 <TableKey>EV Yield</TableKey>
                 <TableValue>1 Special Attack</TableValue>
@@ -117,7 +114,7 @@ const AboutPokemon: React.FC = () => {
                 <TableValue>(X/Y - Central Kalos)</TableValue>
                 <TableKey>001</TableKey>
                 <TableValue>(Let's Go Pikachu/Let's Go Eevee)</TableValue>
-            </AboutTable>
+            </AboutTable> */}
         </AboutInfoSection>
     );
 }

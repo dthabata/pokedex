@@ -62,16 +62,15 @@ const Details: React.FC = () => {
 
     return(
         <>
-        {pokemonDetailsLoading
-            ?(<div> 
+        {pokemonDetailsLoading ?
+            (<div> 
                 <Spin size="large" /> 
             </div>)
-            :(
+            : (
             <MainWrapper>
                     <DetailsHeaderWrapper>
                         <DetailsHeader>
                             <Button type="text"  onClick={(event => handleBack())}>VOLTAR</Button>
-
                             <DetailsInfo>
                                 <DetailsImage>
                                     <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemonDetails?.id}.svg`} alt="" />

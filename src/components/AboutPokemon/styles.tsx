@@ -10,15 +10,6 @@ export const AboutInfoSection = styled.section`
     gap: 8px;
 `;
 
-export const AboutInfoText = styled.div`
-    text-align: justify;
-    color: rgba(116, 116, 118, 1);
-    font-size: 16px;
-    line-height: 19.09px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-`;
-
 export const Heading = styled.h4`
     color: #1677ff;
     font-size: 16px;

@@ -22,18 +22,24 @@ export const StyledMain = styled.main`
     background-color: #fff; 
 `;
 
-export const StyledSection = styled.section`
+export const StyledSection = styled.section<{ singleCard?: boolean }>`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem 2rem;
     background-color: #fff;
     padding-top: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
     justify-content: center;
+
+    ${({ singleCard }) => singleCard && `
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    `}
 `;
 
-export const StyledCard = styled.div`
+export const StyledCard = styled.div<{ singleCard?: boolean }>`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content);
@@ -54,6 +60,10 @@ export const StyledCard = styled.div`
         transform: scale(1.05);
         transition: transform 0.3s ease;
     }
+
+    ${({ singleCard }) => singleCard && `
+        width: 300px;
+    `}
 `;
 
 export const StyledSpan = styled.span`
@@ -82,12 +92,26 @@ export const StyledElement = styled.div`
 `;
 
 export const StyledPokemon = styled.img`
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 90%;
     max-width: 200px;
     min-width: 100px;
     max-height: 220px;
     min-height: 100px;
+    margin-top: 20px;
+    margin-bottom: -20px;
     object-fit: contain;
     justify-self: center;
+`;
+
+export const AboutInfoText = styled.div`
+display: flex;
+    text-align: justify;
+    flex-direction: row;
+    justify-content: center;
+    color: rgba(116, 116, 118, 1);
+    font-size: 16px;
+    line-height: 15px;
+    margin-top: 40px;
+    margin-bottom: 10px;
 `;
