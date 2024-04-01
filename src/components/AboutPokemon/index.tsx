@@ -20,32 +20,30 @@ import { useSelector } from 'react-redux';
 import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
 import { IPokemon } from '../../interfaces/pokemon-types';
 
+interface PokemonAboutState {
+    pokemon: any;
+}
 
 const AboutPokemon: React.FC = () => {
-
-    const pokemonDetails = useSelector((state: RootState) => state.pokemonDetails.pokemon)
-
-    console.log(pokemonDetails);
+    const pokemonDetails = useSelector((state: RootState) => (state.pokemonDetails as PokemonAboutState).pokemon);
 
     const abilitiesFormat = (abilities: any[] | undefined) =>{
         const list = new Array();
-        if( abilities && abilities.length > 0){
+        if (abilities && abilities.length > 0) {
             abilities?.map((ability, index) => ( 
                 list.push(ability?.ability?.name)
-            ))   
+            ));
         }
-        
         return list.join(', ');
     }
 
     const typesFormat = (types: any[] | undefined) =>{
         const list = new Array();
-        if( types && types.length > 0){
+        if (types && types.length > 0) {
             types?.map((type, index) => ( 
                 list.push(type?.type?.name)
             ))   
         }
-        
         return list;
     }
 

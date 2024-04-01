@@ -1,11 +1,11 @@
 export interface IPokemonListState {
     pokemons: IPokemon[],
-    pokemonListRquest: IPokemonListRquest,
+    pokemonListRequest: IPokemonListRequest,
     loading: boolean;
     error: string | null;
 }
 
-export interface IPokemonListRquest {
+export interface IPokemonListRequest {
     name?: string,
     offset: number,
     limit: number
@@ -29,7 +29,6 @@ export interface IPokemon {
     category: any;
     abilities: any;
     types: any;
-
-    //POR UMA LIMITACAO DE TEMPO, NAO FOI FEITO. PORÉM O OBJETO DE RETORNO DEVERIA SER INTEIRAMENTE MAPEADO. ESSE É UM EXEMPLO DO INICIO DO MAPEAMENTO. ALEM DA INTERFACE POKEMON, TODAS AS OUTRAS TAMBEM DEVEM SER MAPEADAS
 }
 
+// Due to a time limitation, the return object wasn't entirely mapped. This is an example of how to map objects and develop interfaces. To have the whole process complete, in addition to the Pokémon interface, all the other objects must be mapped.

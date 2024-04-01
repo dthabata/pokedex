@@ -10,53 +10,55 @@ import {
     Element,
 } from './styles';
 import { Tabs, Button, Spin } from 'antd';
-import { Routes, Route, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import typeGrass from '../../assets/grass.png';
 import typePoison from '../../assets/poison.png';
 import AboutPokemon from '../../components/AboutPokemon';
 import StatsPokemon from '../../components/StatsPokemon';
 import EvolutionPokemon from '../../components/EvolutionPokemon';
-
-
 import { useSelector } from 'react-redux';
 import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
 import { fetchPokemonDetail } from '../../redux/PokemonDetailsReducer';
 
 const { TabPane } = Tabs;
 
-const Details: React.FC = () => {
+interface PokemonDetailsState {
+    pokemon: any;
+    loading: boolean;
+    error: string | null;
+}
 
+const Details: React.FC = () => {
     const { name } = useParams();
 
     const dispatch: AppDispatch = useAppDispatch();
-    const pokemonDetails = useSelector((state: RootState) => state.pokemonDetails.pokemon)
-    const pokemonDetailsLoading = useSelector((state: RootState) => state.pokemonDetails.loading)
-    const pokemonDetailsError = useSelector((state: RootState) => state.pokemonDetails.error)
+    const pokemonDetails = useSelector((state: RootState) => (state.pokemonDetails as PokemonDetailsState).pokemon);
+    const pokemonDetailsLoading = useSelector((state: RootState) => (state.pokemonDetails as PokemonDetailsState).loading);
+    const pokemonDetailsError = useSelector((state: RootState) => (state.pokemonDetails as PokemonDetailsState).error);
 
     const navigate = useNavigate();
     
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
-
-      useEffect(() => {
-        //SE O POKEMON NAO EXISTIR CASO DIGITE ERRADO NA URL, VOLTA PARA LISTAGEM
-        if (!pokemonDetails && pokemonDetailsError && pokemonDetailsError.length > 0){
-            navigate(`/`);
-        }
-      }, [pokemonDetailsError])
+    }, []);
 
     useEffect(() => {
-        if( !pokemonDetails ){
-            dispatch(fetchPokemonDetail( String(name) ))
+        // If url Pokémon data is incorrect, returns to list
+        if (!pokemonDetails && pokemonDetailsError && pokemonDetailsError.length > 0) {
+            navigate(`/`);
+        }
+    }, [pokemonDetailsError]);
+
+    useEffect(() => {
+        if(!pokemonDetails) {
+            dispatch(fetchPokemonDetail(String(name)))
         }
     }, [dispatch]);
 
     const handleBack = () => {
         navigate(`/`);
     }
-
 
     return(
         <>
@@ -101,7 +103,6 @@ const Details: React.FC = () => {
                             </TabPane>
                         </Tabs>
                     </DetailsBodyWrapper>
-                
             </MainWrapper>
         )}
         </>

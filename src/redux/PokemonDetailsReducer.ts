@@ -1,9 +1,9 @@
 import { createAsyncThunk, createSlice, PayloadAction  } from '@reduxjs/toolkit';
-import { IPokemonDetailsState, IPokemon } from '../interfaces/pokemon-types'
-import { fetchPokemonDetailServiceByName } from '../services/pokemon-services'
+import { IPokemonDetailsState, IPokemon } from '../interfaces/pokemon-types';
+import { fetchPokemonDetailServiceByName } from '../services/pokemon-services';
 
 export const fetchPokemonDetail = createAsyncThunk<IPokemon, string, { rejectValue: string }>(
-    "pokemon/fetchPokemonDetail",
+    'pokemon/fetchPokemonDetail',
     async (name: String, thunkAPI) => {
         try {
             return fetchPokemonDetailServiceByName(name)
@@ -19,7 +19,7 @@ const initialState: IPokemonDetailsState = {
     error: null,
 };
 
-export const pokemonDetailslice = createSlice({
+export const pokemonDetailslice: any = createSlice({
     name: 'pokemon/details',
     initialState,
     reducers: {
@@ -31,20 +31,20 @@ export const pokemonDetailslice = createSlice({
     },
     extraReducers: (builder) => {
         builder
-        .addCase(fetchPokemonDetail.pending, (state) => {
-            state.loading = true;
-            state.error = null;
-        })
-        .addCase(fetchPokemonDetail.fulfilled, (state, action) => {
-            state.loading = false;
-            state.pokemon = { ...action.payload };
-        })
-        .addCase(fetchPokemonDetail.rejected, (state, action) => {
-            state.loading = false;
-            state.error = action.error.message || 'Something went wrong';
-        });
+            .addCase(fetchPokemonDetail.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchPokemonDetail.fulfilled, (state, action) => {
+                state.loading = false;
+                state.pokemon = { ...action.payload };
+            })
+            .addCase(fetchPokemonDetail.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.error.message || 'Something went wrong';
+            });
     },
 });
 
 export default pokemonDetailslice.reducer;
-export const { pokemonAdd } = pokemonDetailslice.actions
+export const { pokemonAdd } = pokemonDetailslice.actions;
