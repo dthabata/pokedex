@@ -25,8 +25,8 @@ export const pokemonDetailslice = createSlice({
     reducers: {
         pokemonAdd(state, action: PayloadAction<IPokemon>) {
             state.pokemon = action.payload
-            console.log("================================state.pokemon:")
-            console.log(state.pokemon);
+            state.loading = false;
+            state.error   = null;
         },
     },
     extraReducers: (builder) => {

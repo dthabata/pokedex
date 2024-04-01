@@ -1,12 +1,19 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { IPokemonListState, IPokemonListRquest, IPokemon } from '../interfaces/pokemon-types'
-import { fetchPokemonListService } from '../services/pokemon-services'
+import { fetchPokemonListService, fetchPokemonDetailServiceByName } from '../services/pokemon-services'
 
 export const fetchPokemonList = createAsyncThunk("pokemon/fetchPokemonList",
     async ( pokemonListRquest: IPokemonListRquest, thunkAPI) => {
         try {
-            return fetchPokemonListService(pokemonListRquest.limit, pokemonListRquest.offset)
+
+            if( pokemonListRquest?.name && pokemonListRquest?.name.length > 0 ){
+                const pokemon = await fetchPokemonDetailServiceByName(pokemonListRquest?.name);
+                return [pokemon]
+            }
+
+            return fetchPokemonListService(pokemonListRquest.limit, pokemonListRquest.offset);
         } catch (error) {
+            console.log("Failed to fetch Pokémons.");
             return thunkAPI.rejectWithValue("Failed to fetch Pokémons.");
         }
     }
