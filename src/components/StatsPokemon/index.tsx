@@ -9,9 +9,20 @@ import {
     StyledNumbers,
 } from './styles';
 import { Flex, Progress } from 'antd';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../redux/index';
+import { IPokemonDetailsState } from '../../interfaces/pokemon-types';
 import badge1 from '../../assets/badge-1.png';
 
+
 const StatsPokemon: React.FC = () => {
+    const pokemonDetails = useSelector((state: RootState) => (state.pokemonDetails as IPokemonDetailsState).pokemon);
+    
+    const capitalizeFirstLetter = (string: string | undefined) => {
+        if (string === undefined) return '';
+        return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    }
+
     return (
         <StyledSection className="stats-info">
             <StyledH4>Base Stats</StyledH4>
@@ -29,7 +40,7 @@ const StatsPokemon: React.FC = () => {
             </StyledText>
             <StyledH4>Type Defenses</StyledH4>
             <StyledContent>
-                The effectiveness of each type on Bulbasaur.
+                The effectiveness of each type on <strong>{capitalizeFirstLetter(pokemonDetails?.name)}</strong>.
             </StyledContent>
                 <StyledSkills>
                     <div className="item">

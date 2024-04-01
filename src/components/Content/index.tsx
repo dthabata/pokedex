@@ -41,9 +41,9 @@ import { getTypesListByPokemon } from '../../services/pokemon-formatter'
 const AppContent: React.FC = () => {
     const navigate = useNavigate();
     const dispatch: AppDispatch = useAppDispatch();
-    const pokemonList = useSelector((state: RootState) => state.pokemonList.pokemons)
-    const pokemonListRequest = useSelector((state: RootState) => state.pokemonList.pokemonListRequest)
-    const pokemonListLoading = useSelector((state: RootState) => state.pokemonList.loading)
+    const pokemonList = useSelector((state: RootState) => state.pokemonList.pokemons);
+    const pokemonListRequest = useSelector((state: RootState) => state.pokemonList.pokemonListRequest);
+    const pokemonListLoading = useSelector((state: RootState) => state.pokemonList.loading);
     const pokemonDetails = useSelector((state: RootState) => (state.pokemonDetails as IPokemonDetailsState).pokemon);
 
     const onSearch: (value: string, event?: React.ChangeEvent<HTMLInputElement> | React.KeyboardEvent<HTMLInputElement> | React.MouseEvent<HTMLElement, MouseEvent>, info?: { source?: 'clear' | 'input' }) => void = (value, _e, info) => {
