@@ -16,30 +16,64 @@ import badge2 from '../../assets/badge-2.png';
 import badge3 from '../../assets/badge-3.png';
 import badge4 from '../../assets/badge-4.png';
 
+import { useSelector } from 'react-redux';
+import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
+import { IPokemon } from '../../interfaces/pokemon-types';
+
+
 const AboutPokemon: React.FC = () => {
+
+    const pokemonDetails = useSelector((state: RootState) => state.pokemonDetails.pokemon)
+
+    console.log(pokemonDetails);
+
+    const abilitiesFormat = (abilities: any[] | undefined) =>{
+        const list = new Array();
+        if( abilities && abilities.length > 0){
+            abilities?.map((ability, index) => ( 
+                list.push(ability?.ability?.name)
+            ))   
+        }
+        
+        return list.join(', ');
+    }
+
+    const typesFormat = (types: any[] | undefined) =>{
+        const list = new Array();
+        if( types && types.length > 0){
+            types?.map((type, index) => ( 
+                list.push(type?.type?.name)
+            ))   
+        }
+        
+        return list;
+    }
+
     return (
         <AboutInfoSection>
-            <AboutInfoText>
+            {/* <AboutInfoText>
                 Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.
-            </AboutInfoText>
+            </AboutInfoText> */}
 
             <Heading>Pokédex Data</Heading>
             <AboutTable>
-                <TableKey>Species</TableKey>
-                <TableValue>Seed pokemon</TableValue>
                 <TableKey>Height</TableKey>
-                <TableValue>0.7m (2′04″)</TableValue>
+                <TableValue>{pokemonDetails?.height} cm</TableValue>
                 <TableKey>Weight</TableKey>
-                <TableValue>6.9kg (15.2 lbs)</TableValue>
+                <TableValue>{pokemonDetails?.weight} g</TableValue>
                 <TableKey>Abilities</TableKey>
-                <TableValue>1. Overgrow | Chlorophyll (hidden ability)</TableValue>
-                <TableKey>Weaknesses</TableKey>
-                <TableValue>
+                <TableValue>{abilitiesFormat(pokemonDetails?.abilities)}</TableValue>
+                <TableKey>Type</TableKey>
+                <TableValue>{typesFormat(pokemonDetails?.types)}</TableValue>
+                
+                {/* <TableValue>
                     <AboutImg src={badge1} alt="" />
                     <AboutImg src={badge2} alt="" />
                     <AboutImg src={badge3} alt="" />
                     <AboutImg src={badge4} alt="" />
-                </TableValue>
+                </TableValue> */}
+
+
             </AboutTable>
 
             <Heading>Training</Heading>
