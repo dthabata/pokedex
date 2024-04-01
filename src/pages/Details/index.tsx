@@ -99,9 +99,6 @@ const Details: React.FC = () => {
                             <TabPane tab="Evolution" key="3" className="detail-body-wrapper-sm">
                                 <EvolutionPokemon />
                             </TabPane>
-                            <TabPane tab="Data insights" key="4" className="detail-body-wrapper">
-                                Data insights
-                            </TabPane>
                         </Tabs>
                     </DetailsBodyWrapper>
             </MainWrapper>
