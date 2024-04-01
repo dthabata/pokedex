@@ -4,6 +4,31 @@ import { Input, Layout } from 'antd';
 const { Search } = Input;
 const { Content } = Layout;
 
+const pokemonBgColor: Record<string, string> = {
+    "bug": "#8bd674",
+    "dark": "#6f6e78",
+    "dragon": "#7383b9",
+    "electric": "#f2cb55",
+    "fairy": "#eaa4c0",
+    "fighting": "#f76285",
+    "fire": "#ffa756",
+    "flying": "#83a2e3",
+    "ghost": "#8a7ead",
+    "grass": "#8bbe8a",
+    "ground": "#f78551",
+    "ice": "#91d8df",
+    "normal": "#bcbcbc",
+    "poison": "#9f6e97",
+    "psychic": "#ff6568",
+    "rock": "#d4c294",
+    "steel": "#8ca2ad",
+    "water": "#58abf6",
+};
+
+const accessPokemonBgColor = (str: string) => {
+    return pokemonBgColor[str];
+};
+
 export const StyledContent = styled(Content)`
     background-color: #fff !important;
     display: flex;
@@ -42,9 +67,11 @@ export const StyledSection = styled.section`
     padding-right: 2rem;
     justify-content: center;
     margin-bottom: 40px;
+    align-items: stretch;
+    grid-auto-rows: 400px;
 `;
 
-export const StyledCard = styled.div<{ singleCard?: boolean }>`
+export const StyledCard = styled.div<{ singleCard?: boolean, type: string }>`
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, min-content);
@@ -52,7 +79,6 @@ export const StyledCard = styled.div<{ singleCard?: boolean }>`
     border-radius: 1rem;
     padding: 2rem;
     cursor: pointer;
-    background-color: #8bbe8a;
     color: #fff;
     box-shadow: 10px 10px 20px rgba(43, 48, 43, 0.26);
     background-image: url(${require('../../assets/pattern.png')}),
@@ -68,6 +94,10 @@ export const StyledCard = styled.div<{ singleCard?: boolean }>`
 
     ${({ singleCard }) => singleCard && `
         width: 300px;
+    `}
+
+    ${({ type }) => type && `
+        background-color: ${accessPokemonBgColor(type)};
     `}
 `;
 
