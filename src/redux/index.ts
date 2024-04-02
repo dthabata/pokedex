@@ -8,7 +8,7 @@ export const store = configureStore({
         pokemonList: PokemonListReducer,
         pokemonDetails: PokemonDetailsReducer
     }
-})
+});
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;

@@ -20,7 +20,7 @@ const StatsPokemon: React.FC = () => {
                 <Flex gap="small" vertical>
                 {getStatsListByPokemon(pokemonDetails).map((item: any) => (
                     <StyledContent>
-                        <p>{item["name"]}</p>
+                        <div>{item["name"]}</div>
                         <Progress percent={item["value"]} steps={7} showInfo={false} status="active"/>
                     </StyledContent>
                 ))}

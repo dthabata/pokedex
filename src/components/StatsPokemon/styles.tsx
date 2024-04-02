@@ -19,6 +19,7 @@ export const StyledH4 = styled.h4`
     justify-content: center;
     text-align: justify;
     margin-top: 20px;
+    margin-bottom: 25px;
 `;
 
 export const StyledContent = styled.div`
@@ -27,4 +28,11 @@ export const StyledContent = styled.div`
     gap: 12px;
     align-self: self-start;
     max-width: 100%;
+
+    div {
+        color: rgba(23, 23, 27, 1);
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: capitalize; /* Aqui é onde você adiciona a transformação */
+    }
 `;
