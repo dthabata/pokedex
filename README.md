@@ -21,7 +21,7 @@ Once done, just hit `npm start` to see the Pokédex on your screen.
 - React was used in the project through functional components, with arrow functions, also using `hooks`;
 - Redux Toolkit was applied as suggested;
 - The project was created with TypeScript formatting, however, not all objects were typed; I demonstrated how development should be done in the language - main reference of how I think it should be done is demonstrated in [this project](https://github.com/monbrey/pokeapi-typescript);
-- The API call was made asynchronously, using Redux Toolkit with `createAsyncThunk`;
+- The API call was made asynchronously, using Redux Toolkit `createAsyncThunk`;
 - Responsiveness was a priority for the entire application;
 - The routes were done as requested;
 - No CSS framework was used beyond Styled Components and AntDesign, which was recommended.
