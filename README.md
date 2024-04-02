@@ -29,7 +29,11 @@ Once done, just hit `npm start` to see the Pokédex on your screen.
 
 - Some comments were left on purpose for the test evaluator to read;
 
-#### 💻 References
+#### 💻 Preview
+
+
+
+#### 📝 References
 
 - [React](https://legacy.reactjs.org/docs/getting-started.html);
 - [Redux](https://redux.js.org/);
