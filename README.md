@@ -24,7 +24,7 @@ Once done, just hit `npm start` to see the Pokédex on your screen.
 - The API call was made asynchronously, using Redux Toolkit `createAsyncThunk`;
 - Responsiveness was a priority for the entire application;
 - The routes were done as requested;
-- No CSS framework was used beyond Styled Components and AntDesign, which was recommended.
+- No CSS framework was used beyond Styled Components and [Ant Design](https://ant.design/), which was recommended.
 
 #### ✒️ Observations
 
