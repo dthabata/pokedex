@@ -2,7 +2,7 @@
 
 This project was done based on the [Looqbox FrontEnd Challenge](https://github.com/looqbox/looqbox-frontend-challenge).
 
-### 🚀 Start
+#### 🚀 Start
 
 Clone the project to your machine and run `npm install` to install the project's dependencies.
 Once done, just hit `npm start` to see the Pokédex on your screen.
