@@ -20,8 +20,8 @@ Once done, just hit `npm start` to see the Pokédex on your screen.
 - HTML/CSS;
 - React was used in the project through functional components, with arrow functions, also using `hooks`;
 - Redux Toolkit was applied as suggested;
-- The project was created with TypeScript formatting, however, not all objects were typed; I demonstrated how development should be done in the language - [main reference of how I think it should be done is demonstrated by this project](https://github.com/monbrey/pokeapi-typescript);
-- The API call was made asynchronously;
+- The project was created with TypeScript formatting, however, not all objects were typed; I demonstrated how development should be done in the language - main reference of how I think it should be done is demonstrated in [this project](https://github.com/monbrey/pokeapi-typescript);
+- The API call was made asynchronously, using Redux Toolkit with `createAsyncThunk`;
 - Responsiveness was a priority for the entire application;
 - The routes were done as requested;
 - No CSS framework was used beyond Styled Components and AntDesign, which was recommended.
@@ -39,6 +39,7 @@ Once done, just hit `npm start` to see the Pokédex on your screen.
 - [React](https://legacy.reactjs.org/docs/getting-started.html);
 - [Redux](https://redux.js.org/);
 - [Redux Toolkit](https://redux-toolkit.js.org/);
+- [Redux Toolkit createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk);
 - [Redux Toolkit Guide](https://www.smashingmagazine.com/2023/05/guide-redux-toolkit-typescript/);
 - [Project for inspiration // TS](https://github.com/monbrey/pokeapi-typescript);
 - [Project for inspiration // Design](https://github.com/Lorenalgm/pokedex?tab=readme-ov-file).
