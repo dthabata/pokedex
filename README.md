@@ -29,9 +29,9 @@ Once done, just hit `npm start` to see the Pokédex on your screen.
 
 - Some comments were left on purpose for the test evaluator to read;
 
-#### 💻 Preview
+#### 💻 Quick preview
 
-
+![Pokédex App](https://github.com/dthabata/pokedex/assets/97548859/c70a270d-69e3-4834-890d-2aecdd8a7c1d)
 
 #### 📝 References
 
