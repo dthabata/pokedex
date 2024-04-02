@@ -19,3 +19,15 @@ export const getTypesListByPokemon  = (pokemon: IPokemon | undefined) =>{
     }
     return list;
 }
+
+
+export const getStatsListByPokemon  = (pokemon: IPokemon | undefined) =>{
+    const list: { name: string; value: number }[] = [];
+    
+    if (pokemon?.stats && pokemon?.stats.length > 0) {
+        pokemon?.stats?.map((item: any, index: any) => ( 
+            list.push({ "name": item?.stat?.name, "value": (item?.base_stat * 100 / 180)})
+        ));
+    }
+    return list;
+}

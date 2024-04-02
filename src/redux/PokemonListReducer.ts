@@ -19,7 +19,7 @@ export const fetchPokemonList = createAsyncThunk('pokemon/fetchPokemonList',
 
 const initialState: IPokemonListState = {
     pokemons: [],
-    pokemonListRequest: {offset: 0, limit: 50},
+    pokemonListRequest: {offset: 0, limit: 10},
     loading: false,
     error: null,
 };

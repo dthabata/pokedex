@@ -33,7 +33,6 @@ import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import AboutPokemon from '../../components/AboutPokemon';
 import StatsPokemon from '../../components/StatsPokemon';
-import EvolutionPokemon from '../../components/EvolutionPokemon';
 import { useSelector } from 'react-redux';
 import { useAppDispatch, RootState, AppDispatch } from '../../redux/index';
 import { fetchPokemonDetail } from '../../redux/PokemonDetailsReducer';
@@ -82,11 +81,6 @@ const Details: React.FC = () => {
             key: '2',
             label: 'Stats',
             children: <StatsPokemon />,
-            },
-            {
-            key: '3',
-            label: 'Evolution',
-            children: <EvolutionPokemon />,
             },
     ];
     
